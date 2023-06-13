@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="gravity_core.cpp" path="C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls\lab_05_hls\gravity_core.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="gravity_core_test.cpp" path="C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls\lab_05_hls\gravity_core_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

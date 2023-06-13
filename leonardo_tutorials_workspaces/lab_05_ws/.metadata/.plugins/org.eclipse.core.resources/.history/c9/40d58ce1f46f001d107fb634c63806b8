@@ -1,0 +1,80 @@
+#include <stdio.h>
+#include <xparameters.h>
+#include <xgravity.h>
+#include "platform.h"
+#include "xil_printf.h"
+
+float gravity(float m1, float m2, float d) {
+	return 10.0f * (m1 * m2) / (d * d);
+}
+
+
+int main()
+{
+    init_platform();
+
+    int status;
+    XGravity doGravity;
+    XGravity_Config *doGravity_cfg;
+
+    doGravity_cfg = XGravity_LookupConfig(XPAR_GRAVITY_0_DEVICE_ID);
+    if (!doGravity_cfg) {
+    	printf("Error loading config for doGravity_cfg\n");
+    }
+    status = XGravity_CfgInitialize(&doGravity, doGravity_cfg);
+    if (status != XST_SUCCESS) {
+    	printf("Error initializing for doGravity\n");
+    }
+    XGravity_Initialize(&doGravity, XPAR_GRAVITY_0_DEVICE_ID);
+
+	double test_vector[] = {2000.0, 500.0, 222.22222222222223, 125.0, 80.0, 55.55555555555556, 40.816326530612244, 31.25, 24.691358024691358, 20.0};
+	float distance; // Distance
+	float reference_force;
+	float force; // Current force
+	float error; // Current error
+
+	// ==================== SW ====================
+	printf("Running SW mode\n");
+	for (int i = 0; i < 10; i++) {
+		distance = (float)i+1;
+		reference_force = test_vector[i];
+		force = gravity(10, 20, distance);
+		error = fabsf(force-reference_force);
+		printf("Distance: %f; Fg: %f; Ref: %f; Err: %f\n", distance, force, reference_force, error);
+		acc_error += error;
+	}
+	printf("Accumulated error (SW): %f\n", acc_error);
+
+	// ==================== HW ====================
+	printf("Running HW mode\n");
+		for (int i = 0; i < 10; i++) {
+			distance = (float)i+1;
+			reference_force = test_vector[i];
+
+			// Set parameters
+			XGravity_Set_m1(&doGravity, 10);
+			XGravity_Set_m1(&doGravity, 20);
+			XGravity_Set_d(&doGravity, distance);
+
+			// Start the IP core execution
+			XGravity_Start(&doGravity);
+
+			// Wait until it's done
+			while (!XGravity_IsDone(&doGravity));
+
+			// Get return value
+			force = (float) XGravity_Get_return(&doGravity);
+
+			//force = gravity(10, 20, d);
+			error = fabsf(force-reference_force);
+			printf("Distance: %f; Fg: %f; Ref: %f; Err: %f\n", d, force, reference_force, error);
+			acc_error += error;
+		}
+		printf("Accumulated error (HW): %f\n", acc_error);
+
+
+    //print("Hello World\n\r");
+    //print("Successfully ran Hello World application");
+    cleanup_platform();
+    return 0;
+}

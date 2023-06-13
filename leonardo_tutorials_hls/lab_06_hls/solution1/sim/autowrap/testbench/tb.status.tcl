@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/pedro/Documents/github/Dissertation/training/leonardo_tutorials_hls/lab_06_hls/solution1/./sim/autowrap/testbench/crazy_function_core.cpp_pre.cpp.tb.cpp

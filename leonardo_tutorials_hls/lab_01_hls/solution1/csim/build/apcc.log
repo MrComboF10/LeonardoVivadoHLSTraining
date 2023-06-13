@@ -1,0 +1,7 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'pedro' on host 'pedro-ThinkPad-T410s' (Linux_x86_64 version 5.4.0-149-generic) on Fri Jun 02 10:11:47 WEST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
+INFO: [HLS 200-10] In directory '/home/pedro/Documents/github/Dissertation-Training/leonardo_tutorials_hls/lab_01_hls/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_pedro/461341685697107626051
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 7.67 seconds. Total CPU system time: 0.64 seconds. Total elapsed time: 7.74 seconds; peak allocated memory: 99.012 MB.

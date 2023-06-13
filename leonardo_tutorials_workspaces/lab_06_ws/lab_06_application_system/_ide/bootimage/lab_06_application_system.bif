@@ -1,0 +1,12 @@
+/* C:/Users/pcost/AppData/Local/Temp/bootgen_lab_06_application_system330036197319566727/sd_card_temp/boot.bif */
+/* Command to create bitstream .bin file:       */
+/*   bootgen -image <bif_file> -split bin -w    */
+/* Command to create BOOT.BIN file:             */
+/*   bootgen  -image <bif_file> -w -o i BOOT.BIN */
+/*lab_06_platform*/
+the_ROM_image:
+{
+ [bootloader] C:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials_workspaces/lab_06_ws/lab_06_platform/export/lab_06_platform/sw/lab_06_platform/boot/fsbl.elf
+ C:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials_workspaces/lab_06_ws/lab_06_application/_ide/bitstream/design_1_wrapper.bit
+ C:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials_workspaces/lab_06_ws/lab_06_application/Debug/lab_06_application.elf
+}

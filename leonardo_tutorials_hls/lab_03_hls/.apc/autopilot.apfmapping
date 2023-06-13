@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="alu_core.cpp" path="C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls\lab_03_hls\alu_core.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="alu_core_test.cpp" path="C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls\lab_03_hls\alu_core_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

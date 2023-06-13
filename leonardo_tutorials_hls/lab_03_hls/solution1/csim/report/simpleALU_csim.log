@@ -1,0 +1,13 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../alu_core_test.cpp in debug mode
+   Compiling ../../../alu_core.cpp in debug mode
+   Generating csim.exe
+Reference
+10 + 8 = 18
+10 - 8 = 2
+Our Core
+10 + 8 = 18
+10 - 8 = 2
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,0 +1,5 @@
+C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls\lab_01_hls\solution1\.autopilot\db\divide_core.pp.0.c:153:2: warning: Added loop label VITIS_LOOP_4_1:   [xilinx-label-all-loops]
+ while ((*R) >= D) {
+ ^~~~~
+ VITIS_LOOP_4_1: 
+C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls\lab_01_hls\solution1\.autopilot\db\divide_core.pp.0.c:153:2: note: FIX-IT applied suggested code changes

@@ -1,0 +1,4 @@
+<pragmas>
+<pragma file="lab_02_hls/find_core.c" line="4" pragmaType="interface" parentfunction="find" mode="ap_fifo" port="in_vec" register="0" name="" depth="-1"/>
+<pragma file="lab_02_hls/find_core.c" line="5" pragmaType="interface" parentfunction="find" mode="ap_fifo" port="out_vec" register="0" name="" depth="-1"/>
+</pragmas>

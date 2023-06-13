@@ -1,0 +1,161 @@
+
+
+================================================================
+== Vitis HLS Report for 'find'
+================================================================
+* Date:           Wed Nov 23 20:30:29 2022
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        lab_02_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.028 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       13|       13|  0.130 us|  0.130 us|   14|   14|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                  |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name    |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_6_1  |       11|       11|         3|          1|          1|    10|       yes|
+        +------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 1 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.32>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%i = alloca i32 1"   --->   Operation 6 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%spectopmodule_ln1 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2" [lab_02_hls/find_core.c:1]   --->   Operation 7 'spectopmodule' 'spectopmodule_ln1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%val_r_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %val_r"   --->   Operation 8 'read' 'val_r_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %val_r"   --->   Operation 9 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %val_r, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %in_vec, void @empty_1, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %in_vec"   --->   Operation 12 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %out_vec, void @empty_1, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %out_vec"   --->   Operation 14 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (1.58ns)   --->   "%store_ln6 = store i4 0, i4 %i" [lab_02_hls/find_core.c:6]   --->   Operation 15 'store' 'store_ln6' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%br_ln6 = br void %for.body" [lab_02_hls/find_core.c:6]   --->   Operation 16 'br' 'br_ln6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%i_1 = load i4 %i" [lab_02_hls/find_core.c:6]   --->   Operation 17 'load' 'i_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 18 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (1.30ns)   --->   "%icmp_ln6 = icmp_eq  i4 %i_1, i4 10" [lab_02_hls/find_core.c:6]   --->   Operation 19 'icmp' 'icmp_ln6' <Predicate = true> <Delay = 1.30> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.30> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 10, i64 10, i64 10"   --->   Operation 20 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (1.73ns)   --->   "%add_ln6 = add i4 %i_1, i4 1" [lab_02_hls/find_core.c:6]   --->   Operation 21 'add' 'add_ln6' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%br_ln6 = br i1 %icmp_ln6, void %for.body.split, void %for.end" [lab_02_hls/find_core.c:6]   --->   Operation 22 'br' 'br_ln6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (1.58ns)   --->   "%store_ln6 = store i4 %add_ln6, i4 %i" [lab_02_hls/find_core.c:6]   --->   Operation 23 'store' 'store_ln6' <Predicate = (!icmp_ln6)> <Delay = 1.58>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%br_ln6 = br void %for.body" [lab_02_hls/find_core.c:6]   --->   Operation 24 'br' 'br_ln6' <Predicate = (!icmp_ln6)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 5.02>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%specloopname_ln6 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3" [lab_02_hls/find_core.c:6]   --->   Operation 25 'specloopname' 'specloopname_ln6' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (3.47ns)   --->   "%in_vec_read = read i8 @_ssdm_op_Read.ap_fifo.volatile.i8P0A, i8 %in_vec" [lab_02_hls/find_core.c:7]   --->   Operation 26 'read' 'in_vec_read' <Predicate = true> <Delay = 3.47> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.47> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_2 : Operation 27 [1/1] (1.55ns)   --->   "%icmp_ln7 = icmp_eq  i8 %in_vec_read, i8 %val_r_read" [lab_02_hls/find_core.c:7]   --->   Operation 27 'icmp' 'icmp_ln7' <Predicate = true> <Delay = 1.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.55> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%br_ln7 = br i1 %icmp_ln7, void %if.else, void %if.then" [lab_02_hls/find_core.c:7]   --->   Operation 28 'br' 'br_ln7' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%ret_ln10 = ret" [lab_02_hls/find_core.c:10]   --->   Operation 33 'ret' 'ret_ln10' <Predicate = (icmp_ln6)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 3.47>
+ST_3 : Operation 29 [1/1] (3.47ns)   --->   "%write_ln8 = write void @_ssdm_op_Write.ap_fifo.volatile.i8P0A, i8 %out_vec, i8 0" [lab_02_hls/find_core.c:8]   --->   Operation 29 'write' 'write_ln8' <Predicate = (!icmp_ln7)> <Delay = 3.47> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.47> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc"   --->   Operation 30 'br' 'br_ln0' <Predicate = (!icmp_ln7)> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (3.47ns)   --->   "%write_ln7 = write void @_ssdm_op_Write.ap_fifo.volatile.i8P0A, i8 %out_vec, i8 1" [lab_02_hls/find_core.c:7]   --->   Operation 31 'write' 'write_ln7' <Predicate = (icmp_ln7)> <Delay = 3.47> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.47> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%br_ln7 = br void %for.inc" [lab_02_hls/find_core.c:7]   --->   Operation 32 'br' 'br_ln7' <Predicate = (icmp_ln7)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 3.32ns
+The critical path consists of the following:
+	'alloca' operation ('i') [4]  (0 ns)
+	'load' operation ('i', lab_02_hls/find_core.c:6) on local variable 'i' [16]  (0 ns)
+	'add' operation ('add_ln6', lab_02_hls/find_core.c:6) [20]  (1.74 ns)
+	'store' operation ('store_ln6', lab_02_hls/find_core.c:6) of variable 'add_ln6', lab_02_hls/find_core.c:6 on local variable 'i' [34]  (1.59 ns)
+
+ <State 2>: 5.03ns
+The critical path consists of the following:
+	fifo read operation ('in_vec_read', lab_02_hls/find_core.c:7) on port 'in_vec' (lab_02_hls/find_core.c:7) [24]  (3.48 ns)
+	'icmp' operation ('icmp_ln7', lab_02_hls/find_core.c:7) [25]  (1.55 ns)
+
+ <State 3>: 3.48ns
+The critical path consists of the following:
+	fifo write operation ('write_ln8', lab_02_hls/find_core.c:8) on port 'out_vec' (lab_02_hls/find_core.c:8) [28]  (3.48 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

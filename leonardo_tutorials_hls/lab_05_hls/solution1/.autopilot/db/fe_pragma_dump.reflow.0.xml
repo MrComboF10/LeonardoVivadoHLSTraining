@@ -1,0 +1,6 @@
+<pragmas>
+<pragma file="lab_05_hls/gravity_core.cpp" line="2" pragmaType="interface" parentfunction="gravity" mode="s_axilite" port="" bundle="CRTLS" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="lab_05_hls/gravity_core.cpp" line="3" pragmaType="interface" parentfunction="gravity" mode="s_axilite" port="d" bundle="CRTLS" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="lab_05_hls/gravity_core.cpp" line="4" pragmaType="interface" parentfunction="gravity" mode="s_axilite" port="m1" bundle="CRTLS" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="lab_05_hls/gravity_core.cpp" line="5" pragmaType="interface" parentfunction="gravity" mode="s_axilite" port="m2" bundle="CRTLS" offset="-1" name="" clock="" impl="" register="0"/>
+</pragmas>

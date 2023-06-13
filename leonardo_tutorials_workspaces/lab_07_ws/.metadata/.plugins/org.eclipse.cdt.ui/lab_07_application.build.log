@@ -1,0 +1,29 @@
+14:20:11 **** Incremental Build of configuration Debug for project lab_07_application ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/lab_07.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab_07.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/pedro/Documents/github/Dissertation-Training/leonardo_tutorials_workspaces/lab_07_ws/lab_07_platform/export/lab_07_platform/sw/lab_07_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/lab_07.d" -MT"src/lab_07.o" -o "src/lab_07.o" "../src/lab_07.cpp"
+../src/lab_07.cpp: In function 'int main()':
+../src/lab_07.cpp:48:14: warning: unused variable 'm_dma_buffer_TX' [-Wunused-variable]
+   48 |         int *m_dma_buffer_TX = (int*) TX_BUFFER_BASE;
+      |              ^~~~~~~~~~~~~~~
+Finished building: ../src/lab_07.cpp
+ 
+Building target: lab_07_application.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/pedro/Documents/github/Dissertation-Training/leonardo_tutorials_workspaces/lab_07_ws/lab_07_platform/export/lab_07_platform/sw/lab_07_platform/standalone_domain/bsplib/lib -o "lab_07_application.elf"  ./src/lab_07.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: lab_07_application.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size lab_07_application.elf  |tee "lab_07_application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94554	   2638	  28552	 125744	  1eb30	lab_07_application.elf
+Finished building: lab_07_application.elf.size
+ 
+
+14:20:12 Build Finished (took 839ms)
+

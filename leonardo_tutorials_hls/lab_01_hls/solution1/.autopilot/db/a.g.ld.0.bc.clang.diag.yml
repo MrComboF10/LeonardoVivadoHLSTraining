@@ -1,0 +1,16 @@
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: lab_01_hls/divide_core.c, Line: 4, Column: 18 }
+Function:        divide
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_4_1
+  - String:          ' '
+  - LoopLoc:         'lab_01_hls/divide_core.c:4:18'
+  - String:          ' '
+  - Function:        divide
+    DebugLoc:        { File: lab_01_hls/divide_core.c, Line: 1, Column: 0 }
+  - String:          ' '
+...

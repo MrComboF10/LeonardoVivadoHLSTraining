@@ -1,0 +1,69 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_ref.h:678:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_ref.h:692:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_ref.h:706:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials_hls/lab_03_hls/solution1/csynth.tcl:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="simpleALU" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=simpleALU" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67" msg_body="Inlining function 'ssdm_int&lt;32, true&gt;::ssdm_int(int)' into 'ap_int_base&lt;32, true&gt;::ap_int_base(int)'">
+        <args Callee="ssdm_int&lt;32, true&gt;::ssdm_int(int)" Caller="ap_int_base&lt;32, true&gt;::ap_int_base(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:1853" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::ap_int_base(int)' into 'bool operator==&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;, int)'">
+        <args Callee="ap_int_base&lt;32, true&gt;::ap_int_base(int)" Caller="bool operator==&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:1850" msg_body="Inlining function 'bool ap_int_base&lt;1, false&gt;::operator==&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;) const' into 'bool operator==&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;, int)'">
+        <args Callee="bool ap_int_base&lt;1, false&gt;::operator==&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;) const" Caller="bool operator==&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106" msg_body="Inlining function '_ZN8ssdm_intILi18ELb0EEC2EDq18_j' into 'ap_int_base&lt;18, false&gt;::ap_int_base&lt;17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;)'">
+        <args Callee="_ZN8ssdm_intILi18ELb0EEC2EDq18_j" Caller="ap_int_base&lt;18, false&gt;::ap_int_base&lt;17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67" msg_body="Inlining function '_ZN8ssdm_intILi18ELb0EEC2EDq18_j' into 'ap_int_base&lt;18, false&gt;::ap_int_base(int)'">
+        <args Callee="_ZN8ssdm_intILi18ELb0EEC2EDq18_j" Caller="ap_int_base&lt;18, false&gt;::ap_int_base(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339" msg_body="Inlining function 'ap_int_base&lt;18, false&gt;::ap_int_base&lt;17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;)' into 'ap_int_base&lt;17, false&gt;::RType&lt;17, false&gt;::plus operator+&lt;17, false, 17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;, ap_int_base&lt;17, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;18, false&gt;::ap_int_base&lt;17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;)" Caller="ap_int_base&lt;17, false&gt;::RType&lt;17, false&gt;::plus operator+&lt;17, false, 17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;, ap_int_base&lt;17, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516" msg_body="Inlining function 'ap_int_base&lt;18, false&gt;::ap_int_base(int)' into 'ap_int_base&lt;17, false&gt;::RType&lt;17, false&gt;::plus operator+&lt;17, false, 17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;, ap_int_base&lt;17, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;18, false&gt;::ap_int_base(int)" Caller="ap_int_base&lt;17, false&gt;::RType&lt;17, false&gt;::plus operator+&lt;17, false, 17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;, ap_int_base&lt;17, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427" msg_body="Inlining function 'ap_int_base&lt;18, false&gt;::ap_int_base&lt;17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;)' into 'ap_int_base&lt;17, false&gt;::RType&lt;17, false&gt;::plus operator+&lt;17, false, 17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;, ap_int_base&lt;17, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;18, false&gt;::ap_int_base&lt;17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;)" Caller="ap_int_base&lt;17, false&gt;::RType&lt;17, false&gt;::plus operator+&lt;17, false, 17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;, ap_int_base&lt;17, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106" msg_body="Inlining function '_ZN8ssdm_intILi17ELb0EEC2EDq17_j' into 'ap_int_base&lt;17, false&gt;::ap_int_base&lt;18, false&gt;(ap_int_base&lt;18, false&gt; const&amp;)'">
+        <args Callee="_ZN8ssdm_intILi17ELb0EEC2EDq17_j" Caller="ap_int_base&lt;17, false&gt;::ap_int_base&lt;18, false&gt;(ap_int_base&lt;18, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106" msg_body="Inlining function '_ZN8ssdm_intILi18ELb1EEC2EDq18_i' into 'ap_int_base&lt;18, true&gt;::ap_int_base&lt;17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;)'">
+        <args Callee="_ZN8ssdm_intILi18ELb1EEC2EDq18_i" Caller="ap_int_base&lt;18, true&gt;::ap_int_base&lt;17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67" msg_body="Inlining function '_ZN8ssdm_intILi18ELb1EEC2EDq18_i' into 'ap_int_base&lt;18, true&gt;::ap_int_base(int)'">
+        <args Callee="_ZN8ssdm_intILi18ELb1EEC2EDq18_i" Caller="ap_int_base&lt;18, true&gt;::ap_int_base(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1496:341" msg_body="Inlining function 'ap_int_base&lt;18, true&gt;::ap_int_base&lt;17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;)' into 'ap_int_base&lt;17, false&gt;::RType&lt;17, false&gt;::minus operator-&lt;17, false, 17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;, ap_int_base&lt;17, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;18, true&gt;::ap_int_base&lt;17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;)" Caller="ap_int_base&lt;17, false&gt;::RType&lt;17, false&gt;::minus operator-&lt;17, false, 17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;, ap_int_base&lt;17, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1496:520" msg_body="Inlining function 'ap_int_base&lt;18, true&gt;::ap_int_base(int)' into 'ap_int_base&lt;17, false&gt;::RType&lt;17, false&gt;::minus operator-&lt;17, false, 17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;, ap_int_base&lt;17, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;18, true&gt;::ap_int_base(int)" Caller="ap_int_base&lt;17, false&gt;::RType&lt;17, false&gt;::minus operator-&lt;17, false, 17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;, ap_int_base&lt;17, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1496:430" msg_body="Inlining function 'ap_int_base&lt;18, true&gt;::ap_int_base&lt;17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;)' into 'ap_int_base&lt;17, false&gt;::RType&lt;17, false&gt;::minus operator-&lt;17, false, 17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;, ap_int_base&lt;17, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;18, true&gt;::ap_int_base&lt;17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;)" Caller="ap_int_base&lt;17, false&gt;::RType&lt;17, false&gt;::minus operator-&lt;17, false, 17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;, ap_int_base&lt;17, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106" msg_body="Inlining function '_ZN8ssdm_intILi17ELb0EEC2EDq17_j' into 'ap_int_base&lt;17, false&gt;::ap_int_base&lt;18, true&gt;(ap_int_base&lt;18, true&gt; const&amp;)'">
+        <args Callee="_ZN8ssdm_intILi17ELb0EEC2EDq17_j" Caller="ap_int_base&lt;17, false&gt;::ap_int_base&lt;18, true&gt;(ap_int_base&lt;18, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="lab_03_hls/alu_core.cpp:4:9" msg_body="Inlining function 'bool operator==&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;, int)' into 'simpleALU(ap_uint&lt;17&gt;, ap_uint&lt;17&gt;, ap_uint&lt;1&gt;)'">
+        <args Callee="bool operator==&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;, int)" Caller="simpleALU(ap_uint&lt;17&gt;, ap_uint&lt;17&gt;, ap_uint&lt;1&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="lab_03_hls/alu_core.cpp:5:13" msg_body="Inlining function 'ap_int_base&lt;17, false&gt;::RType&lt;17, false&gt;::minus operator-&lt;17, false, 17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;, ap_int_base&lt;17, false&gt; const&amp;)' into 'simpleALU(ap_uint&lt;17&gt;, ap_uint&lt;17&gt;, ap_uint&lt;1&gt;)'">
+        <args Callee="ap_int_base&lt;17, false&gt;::RType&lt;17, false&gt;::minus operator-&lt;17, false, 17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;, ap_int_base&lt;17, false&gt; const&amp;)" Caller="simpleALU(ap_uint&lt;17&gt;, ap_uint&lt;17&gt;, ap_uint&lt;1&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="lab_03_hls/alu_core.cpp:4:26" msg_body="Inlining function 'ap_int_base&lt;17, false&gt;::RType&lt;17, false&gt;::plus operator+&lt;17, false, 17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;, ap_int_base&lt;17, false&gt; const&amp;)' into 'simpleALU(ap_uint&lt;17&gt;, ap_uint&lt;17&gt;, ap_uint&lt;1&gt;)'">
+        <args Callee="ap_int_base&lt;17, false&gt;::RType&lt;17, false&gt;::plus operator+&lt;17, false, 17, false&gt;(ap_int_base&lt;17, false&gt; const&amp;, ap_int_base&lt;17, false&gt; const&amp;)" Caller="simpleALU(ap_uint&lt;17&gt;, ap_uint&lt;17&gt;, ap_uint&lt;1&gt;)"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

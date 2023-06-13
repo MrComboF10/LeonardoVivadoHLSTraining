@@ -1,0 +1,51 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'pedro' on host 'pedro-ThinkPad-T410s' (Linux_x86_64 version 5.4.0-150-generic) on Mon Jun 05 12:44:03 WEST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
+INFO: [HLS 200-10] In directory '/home/pedro/Documents/github/Dissertation-Training/leonardo_tutorials_hls'
+Sourcing Tcl script '/home/pedro/Documents/github/Dissertation-Training/leonardo_tutorials_hls/lab_09_hls/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: source /home/pedro/Documents/github/Dissertation-Training/leonardo_tutorials_hls/lab_09_hls/solution1/csim.tcl
+INFO: [HLS 200-1510] Running: open_project lab_09_hls 
+INFO: [HLS 200-10] Opening project '/home/pedro/Documents/github/Dissertation-Training/leonardo_tutorials_hls/lab_09_hls'.
+INFO: [HLS 200-1510] Running: set_top doHist 
+INFO: [HLS 200-1510] Running: add_files lab_09_hls/core.cpp 
+INFO: [HLS 200-10] Adding design file 'lab_09_hls/core.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files lab_09_hls/core.h 
+INFO: [HLS 200-10] Adding design file 'lab_09_hls/core.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb lab_09_hls/core_test.cpp -cflags -D__SDSVHLS__ -I/home/pedro/XilinxOpenCV/opencvgcc6/install/include/opencv4 -L/home/pedro/XilinxOpenCV/opencvgcc6/install/lib -lopencv_imgcodecs -lopencv_imgproc -lopencv_core -lstdc++ -std=c++14 -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'lab_09_hls/core_test.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/pedro/Documents/github/Dissertation-Training/leonardo_tutorials_hls/lab_09_hls/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+Running Dispatch Server on port: 46065
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../core_test.cpp in debug mode
+   Compiling ../../../core.cpp in debug mode
+   Generating csim.exe
+/tools/Xilinx/Vivado/2022.2/tps/lnx64/binutils-2.37/bin/ld: /usr/lib/x86_64-linux-gnu/libgeos-3.8.0.so: undefined reference to `std::runtime_error::runtime_error(std::runtime_error&&)@GLIBCXX_3.4.26'
+/tools/Xilinx/Vivado/2022.2/tps/lnx64/binutils-2.37/bin/ld: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so: undefined reference to `std::__cxx11::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >::basic_stringstream()@GLIBCXX_3.4.26'
+/tools/Xilinx/Vivado/2022.2/tps/lnx64/binutils-2.37/bin/ld: /usr/lib/x86_64-linux-gnu/libdap.so.25: undefined reference to `std::logic_error::logic_error(std::logic_error&&)@GLIBCXX_3.4.26'
+/tools/Xilinx/Vivado/2022.2/tps/lnx64/binutils-2.37/bin/ld: /usr/lib/x86_64-linux-gnu/libgdcmMSFF.so.3.0: undefined reference to `std::__cxx11::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >::basic_ostringstream()@GLIBCXX_3.4.26'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile.rules:323: csim.exe] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 9.61 seconds. CPU system time: 0.82 seconds. Elapsed time: 12.12 seconds; current allocated memory: 0.000 MB.
+4
+    while executing
+"source /home/pedro/Documents/github/Dissertation-Training/leonardo_tutorials_hls/lab_09_hls/solution1/csim.tcl"
+    invoked from within
+"hls::main /home/pedro/Documents/github/Dissertation-Training/leonardo_tutorials_hls/lab_09_hls/solution1/csim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-112] Total CPU user time: 14.79 seconds. Total CPU system time: 1.47 seconds. Total elapsed time: 30.95 seconds; peak allocated memory: 233.031 MB.

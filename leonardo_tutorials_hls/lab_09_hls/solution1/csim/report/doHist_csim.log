@@ -1,0 +1,13 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../core_test.cpp in debug mode
+   Compiling ../../../core.cpp in debug mode
+   Generating csim.exe
+/tools/Xilinx/Vivado/2022.2/tps/lnx64/binutils-2.37/bin/ld: /usr/lib/x86_64-linux-gnu/libgeos-3.8.0.so: undefined reference to `std::runtime_error::runtime_error(std::runtime_error&&)@GLIBCXX_3.4.26'
+/tools/Xilinx/Vivado/2022.2/tps/lnx64/binutils-2.37/bin/ld: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so: undefined reference to `std::__cxx11::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >::basic_stringstream()@GLIBCXX_3.4.26'
+/tools/Xilinx/Vivado/2022.2/tps/lnx64/binutils-2.37/bin/ld: /usr/lib/x86_64-linux-gnu/libdap.so.25: undefined reference to `std::logic_error::logic_error(std::logic_error&&)@GLIBCXX_3.4.26'
+/tools/Xilinx/Vivado/2022.2/tps/lnx64/binutils-2.37/bin/ld: /usr/lib/x86_64-linux-gnu/libgdcmMSFF.so.3.0: undefined reference to `std::__cxx11::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >::basic_ostringstream()@GLIBCXX_3.4.26'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile.rules:323: csim.exe] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

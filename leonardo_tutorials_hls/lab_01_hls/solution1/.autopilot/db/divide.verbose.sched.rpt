@@ -1,0 +1,146 @@
+
+
+================================================================
+== Vitis HLS Report for 'divide'
+================================================================
+* Date:           Wed Nov 23 11:01:15 2022
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        lab_01_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.503 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                  |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name    |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_4_1  |        ?|        ?|         1|          1|          1|     ?|       yes|
+        +------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.50>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%empty = alloca i32 1"   --->   Operation 4 'alloca' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%empty_6 = alloca i32 1"   --->   Operation 5 'alloca' 'empty_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%spectopmodule_ln1 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [lab_01_hls/divide_core.c:1]   --->   Operation 6 'spectopmodule' 'spectopmodule_ln1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %N"   --->   Operation 7 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %N, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %D"   --->   Operation 9 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %D, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %Q"   --->   Operation 11 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %Q, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %R"   --->   Operation 13 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %R, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%D_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %D" [lab_01_hls/divide_core.c:1]   --->   Operation 15 'read' 'D_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%N_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %N" [lab_01_hls/divide_core.c:1]   --->   Operation 16 'read' 'N_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (1.58ns)   --->   "%store_ln4 = store i8 0, i8 %empty_6" [lab_01_hls/divide_core.c:4]   --->   Operation 17 'store' 'store_ln4' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 18 [1/1] (1.58ns)   --->   "%store_ln4 = store i8 %N_read, i8 %empty" [lab_01_hls/divide_core.c:4]   --->   Operation 18 'store' 'store_ln4' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%br_ln4 = br void %while.cond" [lab_01_hls/divide_core.c:4]   --->   Operation 19 'br' 'br_ln4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%p_load4 = load i8 %empty" [lab_01_hls/divide_core.c:4]   --->   Operation 20 'load' 'p_load4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%p_load = load i8 %empty_6" [lab_01_hls/divide_core.c:5]   --->   Operation 21 'load' 'p_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 22 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (1.55ns)   --->   "%icmp_ln4 = icmp_ult  i8 %p_load4, i8 %D_read" [lab_01_hls/divide_core.c:4]   --->   Operation 23 'icmp' 'icmp_ln4' <Predicate = true> <Delay = 1.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.55> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 24 [1/1] (1.91ns)   --->   "%add_ln5 = add i8 %p_load, i8 1" [lab_01_hls/divide_core.c:5]   --->   Operation 24 'add' 'add_ln5' <Predicate = true> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%br_ln4 = br i1 %icmp_ln4, void %while.body, void %while.end" [lab_01_hls/divide_core.c:4]   --->   Operation 25 'br' 'br_ln4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%specloopname_ln5 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2" [lab_01_hls/divide_core.c:5]   --->   Operation 26 'specloopname' 'specloopname_ln5' <Predicate = (!icmp_ln4)> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (1.91ns)   --->   "%sub_ln6 = sub i8 %p_load4, i8 %D_read" [lab_01_hls/divide_core.c:6]   --->   Operation 27 'sub' 'sub_ln6' <Predicate = (!icmp_ln4)> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 28 [1/1] (1.58ns)   --->   "%store_ln4 = store i8 %add_ln5, i8 %empty_6" [lab_01_hls/divide_core.c:4]   --->   Operation 28 'store' 'store_ln4' <Predicate = (!icmp_ln4)> <Delay = 1.58>
+ST_1 : Operation 29 [1/1] (1.58ns)   --->   "%store_ln4 = store i8 %sub_ln6, i8 %empty" [lab_01_hls/divide_core.c:4]   --->   Operation 29 'store' 'store_ln4' <Predicate = (!icmp_ln4)> <Delay = 1.58>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%br_ln4 = br void %while.cond" [lab_01_hls/divide_core.c:4]   --->   Operation 30 'br' 'br_ln4' <Predicate = (!icmp_ln4)> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%write_ln4 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %R, i8 %p_load4" [lab_01_hls/divide_core.c:4]   --->   Operation 31 'write' 'write_ln4' <Predicate = (icmp_ln4)> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%write_ln5 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %Q, i8 %p_load" [lab_01_hls/divide_core.c:5]   --->   Operation 32 'write' 'write_ln5' <Predicate = (icmp_ln4)> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%ret_ln8 = ret" [lab_01_hls/divide_core.c:8]   --->   Operation 33 'ret' 'ret_ln8' <Predicate = (icmp_ln4)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 3.5ns
+The critical path consists of the following:
+	'alloca' operation ('empty_6') [6]  (0 ns)
+	'load' operation ('p_load', lab_01_hls/divide_core.c:5) on local variable 'empty_6' [23]  (0 ns)
+	'add' operation ('add_ln5', lab_01_hls/divide_core.c:5) [26]  (1.92 ns)
+	'store' operation ('store_ln4', lab_01_hls/divide_core.c:4) of variable 'add_ln5', lab_01_hls/divide_core.c:5 on local variable 'empty_6' [31]  (1.59 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

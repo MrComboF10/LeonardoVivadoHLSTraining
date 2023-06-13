@@ -1,0 +1,18 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [{
+          "functionName": "distPoints_float",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "C:\/Users\/pcost\/Documents\/github\/Dissertation\/training\/leonardo_tutorials_hls\/lab_04_hls\/solution1\/csynth.tcl",
+          "sourceLine": "14",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "distPoints_float"
+              }]
+          }
+        }]
+    }]}

@@ -1,0 +1,116 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.526 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 10 seconds. Total CPU system time: 3 seconds. Total elapsed time: 34.485 seconds; peak allocated memory: 908.742 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.077 seconds; current allocated memory: 1.034 GB.
+INFO: [HLS 200-10] Analyzing design file 'lab_03_hls/alu_core.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 9.379 seconds; current allocated memory: 1.034 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, true>::ssdm_int(int)' into 'ap_int_base<32, true>::ap_int_base(int)' (E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator==<1, false>(ap_int_base<1, false> const&, int)' (E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:1853)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<1, false>::operator==<32, true>(ap_int_base<32, true> const&) const' into 'bool operator==<1, false>(ap_int_base<1, false> const&, int)' (E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:1850)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi18ELb0EEC2EDq18_j' into 'ap_int_base<18, false>::ap_int_base<17, false>(ap_int_base<17, false> const&)' (E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi18ELb0EEC2EDq18_j' into 'ap_int_base<18, false>::ap_int_base(int)' (E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<18, false>::ap_int_base<17, false>(ap_int_base<17, false> const&)' into 'ap_int_base<17, false>::RType<17, false>::plus operator+<17, false, 17, false>(ap_int_base<17, false> const&, ap_int_base<17, false> const&)' (E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<18, false>::ap_int_base(int)' into 'ap_int_base<17, false>::RType<17, false>::plus operator+<17, false, 17, false>(ap_int_base<17, false> const&, ap_int_base<17, false> const&)' (E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<18, false>::ap_int_base<17, false>(ap_int_base<17, false> const&)' into 'ap_int_base<17, false>::RType<17, false>::plus operator+<17, false, 17, false>(ap_int_base<17, false> const&, ap_int_base<17, false> const&)' (E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi17ELb0EEC2EDq17_j' into 'ap_int_base<17, false>::ap_int_base<18, false>(ap_int_base<18, false> const&)' (E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<17, false>::ap_int_base<18, false>(ap_int_base<18, false> const&)' into 'ap_uint<17>::ap_uint<18>(ap_uint<18> const&)'
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi18ELb1EEC2EDq18_i' into 'ap_int_base<18, true>::ap_int_base<17, false>(ap_int_base<17, false> const&)' (E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi18ELb1EEC2EDq18_i' into 'ap_int_base<18, true>::ap_int_base(int)' (E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<18, true>::ap_int_base<17, false>(ap_int_base<17, false> const&)' into 'ap_int_base<17, false>::RType<17, false>::minus operator-<17, false, 17, false>(ap_int_base<17, false> const&, ap_int_base<17, false> const&)' (E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1496:341)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<18, true>::ap_int_base(int)' into 'ap_int_base<17, false>::RType<17, false>::minus operator-<17, false, 17, false>(ap_int_base<17, false> const&, ap_int_base<17, false> const&)' (E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1496:520)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<18, true>::ap_int_base<17, false>(ap_int_base<17, false> const&)' into 'ap_int_base<17, false>::RType<17, false>::minus operator-<17, false, 17, false>(ap_int_base<17, false> const&, ap_int_base<17, false> const&)' (E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1496:430)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi17ELb0EEC2EDq17_j' into 'ap_int_base<17, false>::ap_int_base<18, true>(ap_int_base<18, true> const&)' (E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<17, false>::ap_int_base<18, true>(ap_int_base<18, true> const&)' into 'ap_uint<17>::ap_uint<18>(ap_int<18> const&)'
+INFO: [HLS 214-131] Inlining function 'bool operator==<1, false>(ap_int_base<1, false> const&, int)' into 'simpleALU(ap_uint<17>, ap_uint<17>, ap_uint<1>)' (lab_03_hls/alu_core.cpp:4:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<17, false>::RType<17, false>::minus operator-<17, false, 17, false>(ap_int_base<17, false> const&, ap_int_base<17, false> const&)' into 'simpleALU(ap_uint<17>, ap_uint<17>, ap_uint<1>)' (lab_03_hls/alu_core.cpp:5:13)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<17, false>::RType<17, false>::plus operator+<17, false, 17, false>(ap_int_base<17, false> const&, ap_int_base<17, false> const&)' into 'simpleALU(ap_uint<17>, ap_uint<17>, ap_uint<1>)' (lab_03_hls/alu_core.cpp:4:26)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.128 seconds; current allocated memory: 1.035 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.004 seconds; current allocated memory: 1.035 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.345 seconds; current allocated memory: 1.046 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.183 seconds; current allocated memory: 1.056 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.254 seconds; current allocated memory: 1.084 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 1.088 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'simpleALU' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'simpleALU' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.414 seconds; current allocated memory: 1.088 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 1.088 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'simpleALU' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'simpleALU/inA' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'simpleALU/inB' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'simpleALU/op' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'simpleALU' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'simpleALU'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.21 seconds; current allocated memory: 1.088 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.732 seconds; current allocated memory: 1.091 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.715 seconds; current allocated memory: 1.094 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for simpleALU.
+INFO: [VLOG 209-307] Generating Verilog RTL for simpleALU.
+INFO: [HLS 200-789] **** Estimated Fmax: 346.33 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 21.794 seconds; current allocated memory: 61.820 MB.
+INFO: [HLS 200-112] Total CPU user time: 10 seconds. Total CPU system time: 3 seconds. Total elapsed time: 45.927 seconds; peak allocated memory: 1.094 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: cosim_design 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-210] Design is translated to an combinational logic. II and Latency will be marked as all 0.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 46.174 seconds; current allocated memory: 9.668 MB.
+INFO: [HLS 200-112] Total CPU user time: 11 seconds. Total CPU system time: 3 seconds. Total elapsed time: 66.38 seconds; peak allocated memory: 1.039 GB.

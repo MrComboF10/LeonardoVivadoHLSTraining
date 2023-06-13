@@ -1,0 +1,13 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../find_core.c in debug mode
+INFO: [HLS 200-10] Running 'E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'pcost' on host 'desktop-482l3je' (Windows NT_amd64 version 6.2) on Sat Nov 26 11:46:12 +0000 2022
+INFO: [HLS 200-10] In directory 'C:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials_hls/lab_02_hls/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 5.78 seconds; peak allocated memory: 11.512 MB.
+   Generating csim.exe
+out=[1, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

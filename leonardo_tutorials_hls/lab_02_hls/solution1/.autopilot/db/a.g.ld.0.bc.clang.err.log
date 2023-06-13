@@ -1,0 +1,2 @@
+remark: lab_02_hls/find_core.c:1:0: Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'in_vec'
+remark: lab_02_hls/find_core.c:1:0: Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'out_vec'

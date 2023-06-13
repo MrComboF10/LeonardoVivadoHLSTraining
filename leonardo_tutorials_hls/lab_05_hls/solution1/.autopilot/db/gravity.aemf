@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1669576273149">
+  <ports id="1" name="m1" type="PortType" originalName="m1" coreId="1852142702" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="m2" type="PortType" originalName="m2" coreId="1852142702" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="d" type="PortType" originalName="d" coreId="1852142702" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="13" name="ap_return" direction="DirOut">
+    <dataInputObjs>ret</dataInputObjs>
+  </ports>
+  <edges id="27" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="29" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="31" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="32" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="33" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="34" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="37" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="38" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="39" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="40" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="41" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.3"/>
+  <blocks id="24" name="gravity" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="d_read" lineNumber="1" originalName="d" fileName="lab_05_hls/gravity_core.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="gravity" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lab_05_hls/gravity_core.cpp" linenumber="1" fileDirectory="C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls" functionName="gravity"/>
+      <dataInputObjs>d</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="m2_read" lineNumber="1" originalName="m2" fileName="lab_05_hls/gravity_core.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="gravity" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lab_05_hls/gravity_core.cpp" linenumber="1" fileDirectory="C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls" functionName="gravity"/>
+      <dataInputObjs>m2</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="m1_read" lineNumber="1" originalName="m1" fileName="lab_05_hls/gravity_core.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="gravity" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lab_05_hls/gravity_core.cpp" linenumber="1" fileDirectory="C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls" functionName="gravity"/>
+      <dataInputObjs>m1</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="mul" lineNumber="6" fileName="lab_05_hls/gravity_core.cpp" fileDirectory=".." rtlName="fmul_32ns_32ns_32_4_max_dsp_1_U1" coreName="FMul_maxdsp" implIndex="maxdsp" control="no" opType="fmul" coreId="30" contextFuncName="gravity" bitwidth="32" opcode="fmul" nodeLatency="3" m_display="0" m_delay="5.7" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lab_05_hls/gravity_core.cpp" linenumber="6" fileDirectory="C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls" functionName="gravity"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="mul1" lineNumber="6" fileName="lab_05_hls/gravity_core.cpp" fileDirectory=".." rtlName="fmul_32ns_32ns_32_4_max_dsp_1_U1" coreName="FMul_maxdsp" implIndex="maxdsp" control="no" opType="fmul" coreId="30" contextFuncName="gravity" bitwidth="32" opcode="fmul" nodeLabel="4.0" nodeLatency="3" m_display="0" m_delay="5.7" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lab_05_hls/gravity_core.cpp" linenumber="6" fileDirectory="C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls" functionName="gravity"/>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataOutputObjs>fdiv</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="mul2" lineNumber="6" fileName="lab_05_hls/gravity_core.cpp" fileDirectory=".." rtlName="fmul_32ns_32ns_32_4_max_dsp_1_U2" coreName="FMul_maxdsp" implIndex="maxdsp" control="no" opType="fmul" coreId="30" contextFuncName="gravity" bitwidth="32" opcode="fmul" nodeLabel="4.0" nodeLatency="3" m_display="0" m_delay="5.7" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lab_05_hls/gravity_core.cpp" linenumber="6" fileDirectory="C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls" functionName="gravity"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>fdiv</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="div" lineNumber="6" fileName="lab_05_hls/gravity_core.cpp" fileDirectory=".." rtlName="fdiv_32ns_32ns_32_16_no_dsp_1_U3" coreName="FDiv" implIndex="fabric" control="no" opType="fdiv" coreId="20" contextFuncName="gravity" bitwidth="32" opcode="fdiv" nodeLabel="8.0" nodeLatency="15" m_display="0" m_delay="6.07" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lab_05_hls/gravity_core.cpp" linenumber="6" fileDirectory="C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls" functionName="gravity"/>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataOutputObjs>ret</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="_ln6" lineNumber="6" fileName="lab_05_hls/gravity_core.cpp" fileDirectory=".." coreId="1348563572" contextFuncName="gravity" opcode="ret" nodeLabel="23.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lab_05_hls/gravity_core.cpp" linenumber="6" fileDirectory="C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls" functionName="gravity"/>
+      <dataInputObjs>fdiv</dataInputObjs>
+      <dataOutputObjs>ap_return</dataOutputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="lab_05_hls/gravity_core.cpp">
+      <validLinenumbers>1</validLinenumbers>
+      <validLinenumbers>6</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <ScheduleInfo time="18"/>
+  <ScheduleInfo time="19"/>
+  <ScheduleInfo time="20"/>
+  <ScheduleInfo time="21"/>
+  <ScheduleInfo time="22"/>
+  <ScheduleInfo time="23"/>
+  <regnodes realName="reg_73">
+    <nodeIds>19</nodeIds>
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <regnodes realName="m2_read_reg_85">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="mul2_reg_95">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="d_read_reg_79">
+    <nodeIds>16</nodeIds>
+  </regnodes>
+  <regnodes realName="m1_read_reg_90">
+    <nodeIds>18</nodeIds>
+  </regnodes>
+  <moduleNodes realName="grp_fu_58">
+    <nodeIds>19</nodeIds>
+    <nodeIds>20</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_69">
+    <nodeIds>22</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_65">
+    <nodeIds>21</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="m1_read_read_fu_52">
+    <nodeIds>18</nodeIds>
+  </ioNodes>
+  <ioNodes realName="m2_read_read_fu_46">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioNodes realName="d_read_read_fu_40">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioPorts name="d">
+    <contents name="read">
+      <nodeIds>16</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="m1">
+    <contents name="read">
+      <nodeIds>18</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="m2">
+    <contents name="read">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ap_return">
+    <contents name="ret">
+      <nodeIds>23</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="4" latency="4"/>
+    </states>
+    <states id="2">
+      <operations id="19" stage="3" latency="4"/>
+    </states>
+    <states id="3">
+      <operations id="19" stage="2" latency="4"/>
+    </states>
+    <states id="4">
+      <operations id="19" stage="1" latency="4"/>
+    </states>
+    <states id="5">
+      <operations id="20" stage="4" latency="4"/>
+      <operations id="21" stage="4" latency="4"/>
+    </states>
+    <states id="6">
+      <operations id="20" stage="3" latency="4"/>
+      <operations id="21" stage="3" latency="4"/>
+    </states>
+    <states id="7">
+      <operations id="20" stage="2" latency="4"/>
+      <operations id="21" stage="2" latency="4"/>
+    </states>
+    <states id="8">
+      <operations id="20" stage="1" latency="4"/>
+      <operations id="21" stage="1" latency="4"/>
+    </states>
+    <states id="9">
+      <operations id="22" stage="16" latency="16"/>
+    </states>
+    <states id="10">
+      <operations id="22" stage="15" latency="16"/>
+    </states>
+    <states id="11">
+      <operations id="22" stage="14" latency="16"/>
+    </states>
+    <states id="12">
+      <operations id="22" stage="13" latency="16"/>
+    </states>
+    <states id="13">
+      <operations id="22" stage="12" latency="16"/>
+    </states>
+    <states id="14">
+      <operations id="22" stage="11" latency="16"/>
+    </states>
+    <states id="15">
+      <operations id="22" stage="10" latency="16"/>
+    </states>
+    <states id="16">
+      <operations id="22" stage="9" latency="16"/>
+    </states>
+    <states id="17">
+      <operations id="22" stage="8" latency="16"/>
+    </states>
+    <states id="18">
+      <operations id="22" stage="7" latency="16"/>
+    </states>
+    <states id="19">
+      <operations id="22" stage="6" latency="16"/>
+    </states>
+    <states id="20">
+      <operations id="22" stage="5" latency="16"/>
+    </states>
+    <states id="21">
+      <operations id="22" stage="4" latency="16"/>
+    </states>
+    <states id="22">
+      <operations id="22" stage="3" latency="16"/>
+    </states>
+    <states id="23">
+      <operations id="22" stage="2" latency="16"/>
+    </states>
+    <states id="24">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="16"/>
+      <operations id="23" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="18" outState="19">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="19" outState="20">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="20" outState="21">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="21" outState="22">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="22" outState="23">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="23" outState="24">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="gravity" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="23" mMaxLatency="23">
+      <basicBlocks>24</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

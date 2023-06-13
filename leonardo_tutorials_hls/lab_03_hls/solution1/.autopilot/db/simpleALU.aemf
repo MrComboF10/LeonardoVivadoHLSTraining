@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1669467807359">
+  <ports id="1" name="inA" type="PortType" originalName="inA.V" coreId="1852142702" bitwidth="17">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="inB" type="PortType" originalName="inB.V" coreId="1852142702" bitwidth="17">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="op" type="PortType" originalName="op.V" coreId="802640512" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="13" name="ap_return" direction="DirOut">
+    <dataInputObjs>ret</dataInputObjs>
+  </ports>
+  <edges id="22" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="25" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="27" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="28" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="29" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="30" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="31" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="32" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="33" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="34" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="35" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges source_obj="//@blocks.0/@node_objs.6" sink_obj="//@ports.3"/>
+  <blocks id="19" name="simpleALU" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="op_read" lineNumber="3" fileName="lab_03_hls/alu_core.cpp" fileDirectory=".." coreId="12184" contextFuncName="simpleALU" bitwidth="1" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lab_03_hls/alu_core.cpp" linenumber="3" fileDirectory="C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls" functionName="simpleALU"/>
+      <dataInputObjs>op</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="inB_read" lineNumber="3" fileName="lab_03_hls/alu_core.cpp" fileDirectory=".." coreId="12184" contextFuncName="simpleALU" bitwidth="17" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lab_03_hls/alu_core.cpp" linenumber="3" fileDirectory="C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls" functionName="simpleALU"/>
+      <dataInputObjs>inB</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="inA_read" lineNumber="3" fileName="lab_03_hls/alu_core.cpp" fileDirectory=".." coreId="1472632059" contextFuncName="simpleALU" bitwidth="17" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lab_03_hls/alu_core.cpp" linenumber="3" fileDirectory="C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls" functionName="simpleALU"/>
+      <dataInputObjs>inA</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="add_ln186" lineNumber="186" fileName="E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="add_ln186_fu_46_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="ap_int_base_18_false_s" bitwidth="17" opcode="add" m_display="0" m_delay="2.1" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls" functionName="ap_int_base&amp;lt;18, false&amp;gt;"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="sub_ln186" lineNumber="186" fileName="E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="sub_ln186_fu_52_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="ap_int_base_18_true_s" bitwidth="17" opcode="sub" m_display="0" m_delay="2.1" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls" functionName="ap_int_base&amp;lt;18, true&amp;gt;"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="select_ln4" lineNumber="4" fileName="lab_03_hls/alu_core.cpp" fileDirectory=".." rtlName="ap_return" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="simpleALU" bitwidth="17" opcode="select" m_display="0" m_delay="0.78" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lab_03_hls/alu_core.cpp" linenumber="4" fileDirectory="C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls" functionName="simpleALU"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>ret</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="_ln6" lineNumber="6" fileName="lab_03_hls/alu_core.cpp" fileDirectory=".." coreId="12184" contextFuncName="simpleALU" opcode="ret" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lab_03_hls/alu_core.cpp" linenumber="6" fileDirectory="C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls" functionName="simpleALU"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>ap_return</dataOutputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h">
+      <validLinenumbers>186</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="lab_03_hls/alu_core.cpp">
+      <validLinenumbers>3</validLinenumbers>
+      <validLinenumbers>4</validLinenumbers>
+      <validLinenumbers>6</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <expressionNodes realName="select_ln4_fu_58">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln186_fu_46">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln186_fu_52">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="inA_read_read_fu_40">
+    <nodeIds>14</nodeIds>
+  </ioNodes>
+  <ioNodes realName="inB_read_read_fu_34">
+    <nodeIds>13</nodeIds>
+  </ioNodes>
+  <ioNodes realName="op_read_read_fu_28">
+    <nodeIds>12</nodeIds>
+  </ioNodes>
+  <ioPorts name="inA">
+    <contents name="read">
+      <nodeIds>14</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="inB">
+    <contents name="read">
+      <nodeIds>13</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="op">
+    <contents name="read">
+      <nodeIds>12</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ap_return">
+    <contents name="ret">
+      <nodeIds>18</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+    </states>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="simpleALU" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>19</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

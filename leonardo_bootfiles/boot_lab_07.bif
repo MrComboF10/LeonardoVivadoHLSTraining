@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]/home/pedro/Documents/github/Dissertation-Training/leonardo_tutorials_workspaces/lab_07_ws/lab_07_platform/zynq_fsbl/fsbl.elf
+	/home/pedro/Documents/github/Dissertation-Training/leonardo_tutorials/lab_07/lab_07.runs/impl_1/design_1_wrapper.bit
+	/home/pedro/Documents/github/Dissertation-Training/leonardo_tutorials_workspaces/lab_07_ws/lab_07_application/Debug/lab_07_application.elf
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="lab_07_hls" solutionName="solution1" date="2023-01-01T12:04:13.557+0000" type="Warning"/>
+      </synLog>
+      <simLog>
+        <logs message="WARNING: [VRFC 10-3645] port 'axis_block_info' remains unconnected for this instance [/home/pedro/Documents/github/Dissertation-Training/leonardo_tutorials_hls/lab_07_hls/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v:19]&#xA;Completed static elaboration&#xA;Starting simulation data flow analysis&#xA;Completed simulation data flow analysis&#xA;Time Resolution for simulation is 1ps&#xA;Compiling package xil_defaultlib.$unit_dataflow_monitor_sv&#xA;Compiling module xil_defaultlib.doGain_CRTL_BUS_s_axi&#xA;Compiling module xil_defaultlib.doGain_mul_32s_32s_32_2_1(NUM_ST...&#xA;Compiling module xil_defaultlib.doGain_regslice_both&#xA;Compiling module xil_defaultlib.doGain_regslice_both(DataWidth=4...&#xA;Compiling module xil_defaultlib.doGain_regslice_both(DataWidth=2...&#xA;Compiling module xil_defaultlib.doGain_regslice_both(DataWidth=1...&#xA;Compiling module xil_defaultlib.doGain_regslice_both(DataWidth=5...&#xA;Compiling module xil_defaultlib.doGain_regslice_both(DataWidth=6...&#xA;Compiling module xil_defaultlib.doGain&#xA;Compiling module xil_defaultlib.fifo(DEPTH=1000,WIDTH=32)&#xA;Compiling module xil_defaultlib.fifo(DEPTH=1000,WIDTH=4)&#xA;Compiling module xil_defaultlib.fifo(DEPTH=1000,WIDTH=2)&#xA;Compiling module xil_defaultlib.fifo(DEPTH=1000,WIDTH=1)&#xA;Compiling module xil_defaultlib.fifo(DEPTH=1000,WIDTH=5)&#xA;Compiling module xil_defaultlib.fifo(DEPTH=1000,WIDTH=6)&#xA;Compiling module xil_defaultlib.AESL_axi_s_inStream&#xA;Compiling module xil_defaultlib.AESL_axi_s_outStream&#xA;Compiling module xil_defaultlib.AESL_axi_slave_CRTL_BUS&#xA;Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor&#xA;Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...&#xA;Compiling module xil_defaultlib.nodf_module_intf&#xA;Compiling module xil_defaultlib.pp_loop_intf(FSM_WIDTH=3)&#xA;Compiling module xil_defaultlib.dataflow_monitor_1&#xA;Compiling module xil_defaultlib.apatb_doGain_top&#xA;Compiling module work.glbl&#xA;Built simulation snapshot doGain&#xA;&#xA;&#xA;****** xsim v2022.2 (64-bit)&#xA;  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022&#xA;  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022&#xA;    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.&#xA;&#xA;&#xA;source xsim.dir/doGain/xsim_script.tcl&#xA;# xsim {doGain} -autoloadwcfg -tclbatch {doGain.tcl}&#xA;Time resolution is 1 ps&#xA;source doGain.tcl&#xA;## run all&#xA;////////////////////////////////////////////////////////////////////////////////////&#xA;// Inter-Transaction Progress: Completed Transaction / Total Transaction&#xA;// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%&#xA;//&#xA;// RTL Simulation : &quot;Inter-Transaction Progress&quot; [&quot;Intra-Transaction Progress&quot;] @ &quot;Simulation Time&quot;&#xA;////////////////////////////////////////////////////////////////////////////////////&#xA;// RTL Simulation : 0 / 1 [0.00%] @ &quot;125000&quot;&#xA;// RTL Simulation : 1 / 1 [100.00%] @ &quot;10445000&quot;&#xA;////////////////////////////////////////////////////////////////////////////////////&#xA;$finish called at time : 10505 ns : File &quot;/home/pedro/Documents/github/Dissertation-Training/leonardo_tutorials_hls/lab_07_hls/solution1/sim/verilog/doGain.autotb.v&quot; Line 453&#xA;## quit" projectName="lab_07_hls" solutionName="solution1" date="2023-01-01T12:06:51.720+0000" type="Warning"/>
+        <logs message="WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the &quot;-mt off -v 1&quot; switches to see more information from the C compiler. The following environment variables have been detected:&#xA;    LIBRARY_PATH" projectName="lab_07_hls" solutionName="solution1" date="2023-01-01T12:06:32.506+0000" type="Warning"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,49 @@
+---
+MainSourceFile:  'C:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials_hls/lab_03_hls/solution1/.autopilot/db/alu_core.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1211_1:  '
+    FileOffset:      1211
+    FilePath:        'E:\Pedro\Programs\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_base.h'
+    Replacements:    
+      - FilePath:        'C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls\lab_03_hls\solution1\.autopilot\db\alu_core.pp.0.cpp'
+        Offset:          52214
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1211_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'E:\Pedro\Programs\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls\lab_03_hls\solution1\.autopilot\db\alu_core.pp.0.cpp'
+        Offset:          259650
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'E:\Pedro\Programs\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls\lab_03_hls\solution1\.autopilot\db\alu_core.pp.0.cpp'
+        Offset:          260089
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'E:\Pedro\Programs\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls\lab_03_hls\solution1\.autopilot\db\alu_core.pp.0.cpp'
+        Offset:          260529
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1245_1:  '
+    FileOffset:      1245
+    FilePath:        'E:\Pedro\Programs\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls\lab_03_hls\solution1\.autopilot\db\alu_core.pp.0.cpp'
+        Offset:          522779
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1245_1: '
+...

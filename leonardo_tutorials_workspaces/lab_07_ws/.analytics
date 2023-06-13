@@ -1,0 +1,13 @@
+timestamp=[2023-01-01 22:00:37], mode=WORKBENCH_START, duration=0:00:39.141, duration_ms=39141, data={}
+timestamp=[2023-01-01 22:00:41], mode=WORKBENCH_UI_INIT, duration=0:00:04.427, duration_ms=4427, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2023-01-01 22:00:42], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:03.201, duration_ms=3201, data={}
+timestamp=[2023-01-02 10:57:36], mode=WORKBENCH_START, duration=0:00:17.184, duration_ms=17184, data={}
+timestamp=[2023-01-02 10:57:38], mode=WORKBENCH_UI_INIT, duration=0:00:02.300, duration_ms=2300, data={editors_count=0, platform_editors_count=0, projects_count=1, platform_projects_count=0, active_platform_editor=false, projects=RemoteSystemsTempFiles}
+timestamp=[2023-01-02 10:57:39], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.634, duration_ms=1634, data={}
+timestamp=[2023-01-02 11:00:03], mode=PLATFORM_CREATION, duration=0:00:30.789, duration_ms=30789, data={platform_source=dsa, os=standalone, processor=ps7_cortexa9, platform=null}
+timestamp=[2023-01-02 11:01:32], mode=PLATFORM_GENERATION, duration=0:00:33.967, duration_ms=33967, data={name=lab_07_platform}
+timestamp=[2023-01-02 11:03:01], mode=APP_CREATION, duration=0:00:19.769, duration_ms=19769, data={name=lab_07_application, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=lab_07_platform, application_type=application}
+timestamp=[2023-01-02 13:33:40], mode=BUILD, duration=0:00:01.157, duration_ms=1157, data={name=lab_07_application, configuration=Debug, clean_build=false}
+timestamp=[2023-01-02 13:33:52], mode=BUILD, duration=0:00:10.889, duration_ms=10889, data={name=lab_07_application_system, configuration=Debug, clean_build=false}
+timestamp=[2023-01-02 14:20:12], mode=BUILD, duration=0:00:00.860, duration_ms=860, data={name=lab_07_application, configuration=Debug, clean_build=false}
+timestamp=[2023-01-02 14:20:24], mode=BUILD, duration=0:00:10.472, duration_ms=10472, data={name=lab_07_application_system, configuration=Debug, clean_build=false}

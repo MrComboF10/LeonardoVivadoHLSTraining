@@ -1,0 +1,5 @@
+C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls\lab_02_hls\solution1\.autopilot\db\find_core.pp.0.c:155:2: warning: Added loop label VITIS_LOOP_6_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < 10; i++) {
+ ^~~
+ VITIS_LOOP_6_1: 
+C:\Users\pcost\Documents\github\Dissertation\training\leonardo_tutorials_hls\lab_02_hls\solution1\.autopilot\db\find_core.pp.0.c:155:2: note: FIX-IT applied suggested code changes

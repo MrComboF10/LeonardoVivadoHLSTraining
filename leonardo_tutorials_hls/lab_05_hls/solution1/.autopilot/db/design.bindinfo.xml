@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op fmul" ID="" IMPL="maxdsp" LATENCY="3" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_4_max_dsp_1_U1" SOURCE="lab_05_hls/gravity_core.cpp:6" VARIABLE="mul" MODULE="gravity" LOOP="" BUNDLEDNAME="" DSP="3" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op fmul" ID="" IMPL="maxdsp" LATENCY="3" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_4_max_dsp_1_U1" SOURCE="lab_05_hls/gravity_core.cpp:6" VARIABLE="mul1" MODULE="gravity" LOOP="" BUNDLEDNAME="" DSP="3" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op fmul" ID="" IMPL="maxdsp" LATENCY="3" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_4_max_dsp_1_U2" SOURCE="lab_05_hls/gravity_core.cpp:6" VARIABLE="mul2" MODULE="gravity" LOOP="" BUNDLEDNAME="" DSP="3" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op fdiv" ID="" IMPL="fabric" LATENCY="15" OPTYPE="fdiv" PRAGMA="" RTLNAME="fdiv_32ns_32ns_32_16_no_dsp_1_U3" SOURCE="lab_05_hls/gravity_core.cpp:6" VARIABLE="div" MODULE="gravity" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="adapter" DISPLAY="bind_adapter axilite" ID="" IMPL="" LATENCY="" OPTYPE="" PRAGMA="yes" RTLNAME="CRTLS_s_axi_U" SOURCE="" VARIABLE="" MODULE="gravity" LOOP="" BUNDLEDNAME="CRTLS" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

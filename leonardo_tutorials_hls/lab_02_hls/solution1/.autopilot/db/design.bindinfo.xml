@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln6_fu_87_p2" SOURCE="lab_02_hls/find_core.c:6" VARIABLE="icmp_ln6" MODULE="find" LOOP="VITIS_LOOP_6_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln6_fu_93_p2" SOURCE="lab_02_hls/find_core.c:6" VARIABLE="add_ln6" MODULE="find" LOOP="VITIS_LOOP_6_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln7_fu_104_p2" SOURCE="lab_02_hls/find_core.c:7" VARIABLE="icmp_ln7" MODULE="find" LOOP="VITIS_LOOP_6_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

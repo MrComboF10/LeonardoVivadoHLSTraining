@@ -1,0 +1,206 @@
+
+
+================================================================
+== Synthesis Summary Report of 'distPoints_float'
+================================================================
++ General Information: 
+    * Date:           Sun Nov 27 12:36:34 2022
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        lab_04_hls
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------+------+------+---------+-----------+----------+---------+------+----------+----------+----------+-------------+-------------+-----+
+    |         Modules         | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |          |          |             |             |     |
+    |         & Loops         | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|   BRAM   |    DSP   |      FF     |     LUT     | URAM|
+    +-------------------------+------+------+---------+-----------+----------+---------+------+----------+----------+----------+-------------+-------------+-----+
+    |+ distPoints_float       |     -|  0.00|      112|  1.120e+03|         -|      113|     -|        no|  60 (21%)|  97 (44%)|  27123 (25%)|  19264 (36%)|    -|
+    | + pow_generic_double_s  |    II|  0.01|       80|    800.000|         -|        1|     -|       yes|  30 (10%)|  45 (20%)|  12776 (12%)|   8385 (15%)|    -|
+    | + pow_generic_double_s  |    II|  0.01|       80|    800.000|         -|        1|     -|       yes|  30 (10%)|  45 (20%)|  12776 (12%)|   8385 (15%)|    -|
+    +-------------------------+------+------+---------+-----------+----------+---------+------+----------+----------+----------+-------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++-----------+---------+----------+
+| Interface | Mode    | Bitwidth |
++-----------+---------+----------+
+| Ax        | ap_none | 32       |
+| Ay        | ap_none | 32       |
+| Bx        | ap_none | 32       |
+| By        | ap_none | 32       |
+| ap_return |         | 32       |
++-----------+---------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| Ax       | in        | float    |
+| Ay       | in        | float    |
+| Bx       | in        | float    |
+| By       | in        | float    |
+| return   | out       | float    |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+--------------+---------+
+| Argument | HW Interface | HW Type |
++----------+--------------+---------+
+| Ax       | Ax           | port    |
+| Ay       | Ay           | port    |
+| Bx       | Bx           | port    |
+| By       | By           | port    |
+| return   | ap_return    | port    |
++----------+--------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------------------------------------------+-----+--------+-----------------+-------+---------+---------+
+| Name                                                      | DSP | Pragma | Variable        | Op    | Impl    | Latency |
++-----------------------------------------------------------+-----+--------+-----------------+-------+---------+---------+
+| + distPoints_float                                        | 97  |        |                 |       |         |         |
+|   fsub_32ns_32ns_32_5_full_dsp_1_U44                      | 2   |        | p_x_assign      | fsub  | fulldsp | 4       |
+|   fsub_32ns_32ns_32_5_full_dsp_1_U45                      | 2   |        | p_x_assign_1    | fsub  | fulldsp | 4       |
+|   dadd_64ns_64ns_64_7_full_dsp_1_U50                      | 3   |        | add             | dadd  | fulldsp | 6       |
+|   fsqrt_32ns_32ns_32_16_no_dsp_1_U49                      | -   |        | tmp_9           | fsqrt | fabric  | 15      |
+|  + pow_generic_double_s (grp_pow_generic_double_s_fu_80)  | 45  |        |                 |       |         |         |
+|    b_exp_fu_584_p2                                        | -   |        | b_exp           | add   | fabric  | 0       |
+|    b_exp_1_fu_656_p2                                      | -   |        | b_exp_1         | add   | fabric  | 0       |
+|    mul_12s_80ns_90_5_1_U9                                 | 4   |        | Elog2_V         | mul   | auto    | 4       |
+|    mul_54s_6ns_54_5_1_U1                                  | 2   |        | mul_ln838       | mul   | auto    | 4       |
+|    mul_71ns_4ns_75_5_1_U2                                 | -   |        | r_V_22          | mul   | auto    | 4       |
+|    mul_73ns_6ns_79_5_1_U3                                 | 3   |        | r_V_23          | mul   | auto    | 4       |
+|    mul_83ns_6ns_89_5_1_U4                                 | 3   |        | r_V_24          | mul   | auto    | 4       |
+|    mul_92ns_6ns_98_5_1_U5                                 | 4   |        | r_V_25          | mul   | auto    | 4       |
+|    mul_87ns_6ns_93_5_1_U6                                 | 3   |        | r_V_26          | mul   | auto    | 4       |
+|    mul_82ns_6ns_88_5_1_U7                                 | 3   |        | r_V_27          | mul   | auto    | 4       |
+|    ret_V_30_fu_1333_p2                                    | -   |        | ret_V_30        | add   | fabric  | 0       |
+|    mul_77ns_6ns_83_5_1_U8                                 | 3   |        | r_V_28          | mul   | auto    | 4       |
+|    ret_V_14_fu_1395_p2                                    | -   |        | ret_V_14        | sub   | fabric  | 0       |
+|    add_ln813_fu_1462_p2                                   | -   |        | add_ln813       | add   | fabric  | 0       |
+|    add_ln813_1_fu_1467_p2                                 | -   |        | add_ln813_1     | add   | fabric  | 0       |
+|    add_ln813_4_fu_1432_p2                                 | -   |        | add_ln813_4     | add   | fabric  | 0       |
+|    mul_40ns_40ns_80_2_1_U10                               | 4   |        | r_V_29          | mul   | auto    | 1       |
+|    ret_V_fu_1529_p2                                       | -   |        | ret_V           | sub   | fabric  | 0       |
+|    mac_muladd_16s_15ns_19s_31_4_1_U15                     | 1   |        | r_V_30          | mul   | dsp48   | 3       |
+|    mac_muladd_16s_15ns_19s_31_4_1_U15                     | 1   |        | ret_V_31        | add   | dsp48   | 3       |
+|    ret_V_18_fu_1637_p2                                    | -   |        | ret_V_18        | add   | fabric  | 0       |
+|    mul_13s_71s_71_5_1_U11                                 | 3   |        | r_V_15          | mul   | auto    | 4       |
+|    m_diff_V_fu_1678_p2                                    | -   |        | m_diff_V        | sub   | fabric  | 0       |
+|    ret_V_33_fu_1753_p2                                    | -   |        | ret_V_33        | add   | fabric  | 0       |
+|    mul_43ns_36ns_79_3_1_U12                               | 4   |        | r_V_17          | mul   | auto    | 2       |
+|    add_ln813_7_fu_1800_p2                                 | -   |        | add_ln813_7     | add   | fabric  | 0       |
+|    exp_Z2P_m_1_V_fu_1809_p2                               | -   |        | exp_Z2P_m_1_V   | add   | fabric  | 0       |
+|    mul_49ns_44ns_93_5_1_U13                               | 4   |        | r_V_19          | mul   | auto    | 4       |
+|    add_ln813_9_fu_1877_p2                                 | -   |        | add_ln813_9     | add   | fabric  | 0       |
+|    exp_Z1P_m_1_l_V_fu_1886_p2                             | -   |        | exp_Z1P_m_1_l_V | add   | fabric  | 0       |
+|    ret_V_35_fu_1924_p2                                    | -   |        | ret_V_35        | add   | fabric  | 0       |
+|    mul_50ns_50ns_100_5_1_U14                              | 4   |        | r_V             | mul   | auto    | 4       |
+|    ret_V_23_fu_1953_p2                                    | -   |        | ret_V_23        | add   | fabric  | 0       |
+|    add_ln1347_1_fu_1959_p2                                | -   |        | add_ln1347_1    | add   | fabric  | 0       |
+|    r_exp_V_fu_2028_p2                                     | -   |        | r_exp_V         | add   | fabric  | 0       |
+|    out_exp_V_fu_2105_p2                                   | -   |        | out_exp_V       | add   | fabric  | 0       |
+|  + pow_generic_double_s (grp_pow_generic_double_s_fu_109) | 45  |        |                 |       |         |         |
+|    b_exp_fu_584_p2                                        | -   |        | b_exp           | add   | fabric  | 0       |
+|    b_exp_1_fu_656_p2                                      | -   |        | b_exp_1         | add   | fabric  | 0       |
+|    mul_12s_80ns_90_5_1_U9                                 | 4   |        | Elog2_V         | mul   | auto    | 4       |
+|    mul_54s_6ns_54_5_1_U1                                  | 2   |        | mul_ln838       | mul   | auto    | 4       |
+|    mul_71ns_4ns_75_5_1_U2                                 | -   |        | r_V_22          | mul   | auto    | 4       |
+|    mul_73ns_6ns_79_5_1_U3                                 | 3   |        | r_V_23          | mul   | auto    | 4       |
+|    mul_83ns_6ns_89_5_1_U4                                 | 3   |        | r_V_24          | mul   | auto    | 4       |
+|    mul_92ns_6ns_98_5_1_U5                                 | 4   |        | r_V_25          | mul   | auto    | 4       |
+|    mul_87ns_6ns_93_5_1_U6                                 | 3   |        | r_V_26          | mul   | auto    | 4       |
+|    mul_82ns_6ns_88_5_1_U7                                 | 3   |        | r_V_27          | mul   | auto    | 4       |
+|    ret_V_30_fu_1333_p2                                    | -   |        | ret_V_30        | add   | fabric  | 0       |
+|    mul_77ns_6ns_83_5_1_U8                                 | 3   |        | r_V_28          | mul   | auto    | 4       |
+|    ret_V_14_fu_1395_p2                                    | -   |        | ret_V_14        | sub   | fabric  | 0       |
+|    add_ln813_fu_1462_p2                                   | -   |        | add_ln813       | add   | fabric  | 0       |
+|    add_ln813_1_fu_1467_p2                                 | -   |        | add_ln813_1     | add   | fabric  | 0       |
+|    add_ln813_4_fu_1432_p2                                 | -   |        | add_ln813_4     | add   | fabric  | 0       |
+|    mul_40ns_40ns_80_2_1_U10                               | 4   |        | r_V_29          | mul   | auto    | 1       |
+|    ret_V_fu_1529_p2                                       | -   |        | ret_V           | sub   | fabric  | 0       |
+|    mac_muladd_16s_15ns_19s_31_4_1_U15                     | 1   |        | r_V_30          | mul   | dsp48   | 3       |
+|    mac_muladd_16s_15ns_19s_31_4_1_U15                     | 1   |        | ret_V_31        | add   | dsp48   | 3       |
+|    ret_V_18_fu_1637_p2                                    | -   |        | ret_V_18        | add   | fabric  | 0       |
+|    mul_13s_71s_71_5_1_U11                                 | 3   |        | r_V_15          | mul   | auto    | 4       |
+|    m_diff_V_fu_1678_p2                                    | -   |        | m_diff_V        | sub   | fabric  | 0       |
+|    ret_V_33_fu_1753_p2                                    | -   |        | ret_V_33        | add   | fabric  | 0       |
+|    mul_43ns_36ns_79_3_1_U12                               | 4   |        | r_V_17          | mul   | auto    | 2       |
+|    add_ln813_7_fu_1800_p2                                 | -   |        | add_ln813_7     | add   | fabric  | 0       |
+|    exp_Z2P_m_1_V_fu_1809_p2                               | -   |        | exp_Z2P_m_1_V   | add   | fabric  | 0       |
+|    mul_49ns_44ns_93_5_1_U13                               | 4   |        | r_V_19          | mul   | auto    | 4       |
+|    add_ln813_9_fu_1877_p2                                 | -   |        | add_ln813_9     | add   | fabric  | 0       |
+|    exp_Z1P_m_1_l_V_fu_1886_p2                             | -   |        | exp_Z1P_m_1_l_V | add   | fabric  | 0       |
+|    ret_V_35_fu_1924_p2                                    | -   |        | ret_V_35        | add   | fabric  | 0       |
+|    mul_50ns_50ns_100_5_1_U14                              | 4   |        | r_V             | mul   | auto    | 4       |
+|    ret_V_23_fu_1953_p2                                    | -   |        | ret_V_23        | add   | fabric  | 0       |
+|    add_ln1347_1_fu_1959_p2                                | -   |        | add_ln1347_1    | add   | fabric  | 0       |
+|    r_exp_V_fu_2028_p2                                     | -   |        | r_exp_V         | add   | fabric  | 0       |
+|    out_exp_V_fu_2105_p2                                   | -   |        | out_exp_V       | add   | fabric  | 0       |
++-----------------------------------------------------------+-----+--------+-----------------+-------+---------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++------------------------------------------------------------------------------+------+------+--------+-------------------------------------------------------------------------+---------+------+---------+
+| Name                                                                         | BRAM | URAM | Pragma | Variable                                                                | Storage | Impl | Latency |
++------------------------------------------------------------------------------+------+------+--------+-------------------------------------------------------------------------+---------+------+---------+
+| + distPoints_float                                                           | 60   | 0    |        |                                                                         |         |      |         |
+|  + pow_generic_double_s (grp_pow_generic_double_s_fu_80)                     | 30   | 0    |        |                                                                         |         |      |         |
+|    pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array_V_U | -    | -    |        | pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array_V | rom_1p  | auto | 1       |
+|    pow_reduce_anonymous_namespace_log0_lut_table_array_V_U                   | 4    | -    |        | pow_reduce_anonymous_namespace_log0_lut_table_array_V                   | rom_1p  | auto | 1       |
+|    pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array_V_U    | 3    | -    |        | pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array_V    | rom_1p  | auto | 1       |
+|    pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array_V_U    | 3    | -    |        | pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array_V    | rom_1p  | auto | 1       |
+|    pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array_V_U   | 3    | -    |        | pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array_V   | rom_1p  | auto | 1       |
+|    pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array_V_U   | 3    | -    |        | pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array_V   | rom_1p  | auto | 1       |
+|    pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array_V_U   | 3    | -    |        | pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array_V   | rom_1p  | auto | 1       |
+|    pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array_V_U   | 3    | -    |        | pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array_V   | rom_1p  | auto | 1       |
+|    pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array_V_U   | 3    | -    |        | pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array_V   | rom_1p  | auto | 1       |
+|    pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array_V_U           | 2    | -    |        | pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array_V           | rom_1p  | auto | 1       |
+|    pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array_V_U             | 1    | -    |        | pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array_V             | rom_2p  | auto | 1       |
+|    pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array_V_U             | 2    | -    |        | pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array_V             | rom_1p  | auto | 1       |
+|  + pow_generic_double_s (grp_pow_generic_double_s_fu_109)                    | 30   | 0    |        |                                                                         |         |      |         |
+|    pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array_V_U | -    | -    |        | pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array_V | rom_1p  | auto | 1       |
+|    pow_reduce_anonymous_namespace_log0_lut_table_array_V_U                   | 4    | -    |        | pow_reduce_anonymous_namespace_log0_lut_table_array_V                   | rom_1p  | auto | 1       |
+|    pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array_V_U    | 3    | -    |        | pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array_V    | rom_1p  | auto | 1       |
+|    pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array_V_U    | 3    | -    |        | pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array_V    | rom_1p  | auto | 1       |
+|    pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array_V_U   | 3    | -    |        | pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array_V   | rom_1p  | auto | 1       |
+|    pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array_V_U   | 3    | -    |        | pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array_V   | rom_1p  | auto | 1       |
+|    pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array_V_U   | 3    | -    |        | pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array_V   | rom_1p  | auto | 1       |
+|    pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array_V_U   | 3    | -    |        | pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array_V   | rom_1p  | auto | 1       |
+|    pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array_V_U   | 3    | -    |        | pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array_V   | rom_1p  | auto | 1       |
+|    pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array_V_U           | 2    | -    |        | pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array_V           | rom_1p  | auto | 1       |
+|    pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array_V_U             | 1    | -    |        | pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array_V             | rom_2p  | auto | 1       |
+|    pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array_V_U             | 2    | -    |        | pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array_V             | rom_1p  | auto | 1       |
++------------------------------------------------------------------------------+------+------+--------+-------------------------------------------------------------------------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+  No pragmas found
+

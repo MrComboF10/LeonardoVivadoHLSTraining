@@ -1,0 +1,10 @@
+14:20:13 **** Incremental Build of configuration Debug for project lab_07_application_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/pedro/Documents/github/Dissertation-Training/leonardo_tutorials_workspaces/lab_07_ws/lab_07_platform/export/lab_07_platform/lab_07_platform.xpfm -domains standalone_domain -bifpath /home/pedro/Documents/github/Dissertation-Training/leonardo_tutorials_workspaces/lab_07_ws/lab_07_application_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/pedro/Documents/github/Dissertation-Training/leonardo_tutorials_workspaces/lab_07_ws/lab_07_platform/export/lab_07_platform/lab_07_platform.xpfm --sys_config lab_07_platform --bif /home/pedro/Documents/github/Dissertation-Training/leonardo_tutorials_workspaces/lab_07_ws/lab_07_application_system/Debug/system.bif --bitstream /home/pedro/Documents/github/Dissertation-Training/leonardo_tutorials_workspaces/lab_07_ws/lab_07_application/_ide/bitstream/design_1_wrapper.bit --elf /home/pedro/Documents/github/Dissertation-Training/leonardo_tutorials_workspaces/lab_07_ws/lab_07_application/Debug/lab_07_application.elf,ps7_cortexa9_0
+creating BOOT.BIN using /home/pedro/Documents/github/Dissertation-Training/leonardo_tutorials_workspaces/lab_07_ws/lab_07_application/_ide/bitstream/design_1_wrapper.bit
+Running /tools/Xilinx/Vitis/2022.2/bin/bootgen  -image /home/pedro/Documents/github/Dissertation-Training/leonardo_tutorials_workspaces/lab_07_ws/lab_07_application_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+14:20:24 Build Finished (took 10s.457ms)
+

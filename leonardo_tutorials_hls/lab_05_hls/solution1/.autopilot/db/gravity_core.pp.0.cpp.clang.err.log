@@ -1,0 +1,16 @@
+C:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials_hls/lab_05_hls/solution1/csynth.tcl:14:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=gravity_XLX_SEP_ PragmaOptions=name=gravity_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=gravity
+        ^
+lab_05_hls/gravity_core.cpp:2:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=gravity_XLX_SEP_ PragmaOptions=mode=s_axilite bundle=CRTLS port=return_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=s_axilite bundle=CRTLS port=return
+        ^
+lab_05_hls/gravity_core.cpp:3:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=gravity_XLX_SEP_ PragmaOptions=mode=s_axilite bundle=CRTLS port=d_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=s_axilite bundle=CRTLS port=d
+        ^
+lab_05_hls/gravity_core.cpp:4:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=gravity_XLX_SEP_ PragmaOptions=mode=s_axilite bundle=CRTLS port=m1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=s_axilite bundle=CRTLS port=m1
+        ^
+lab_05_hls/gravity_core.cpp:5:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=gravity_XLX_SEP_ PragmaOptions=mode=s_axilite bundle=CRTLS port=m2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=s_axilite bundle=CRTLS port=m2
+        ^
+5 warnings generated.

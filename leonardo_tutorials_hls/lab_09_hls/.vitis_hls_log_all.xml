@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="lab_09_hls" solutionName="solution1" date="2023-06-05T12:44:31.626+0100"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="lab_09_hls" solutionName="solution1" date="2023-06-05T12:40:41.710+0100"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="lab_09_hls" solutionName="solution1" date="2023-06-05T12:38:43.611+0100"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="lab_09_hls" solutionName="solution1" date="2023-06-05T12:37:11.287+0100"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="lab_09_hls" solutionName="solution1" date="2023-06-05T12:34:05.779+0100"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="lab_09_hls" solutionName="solution1" date="2023-06-05T12:32:18.273+0100"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="lab_09_hls" solutionName="solution1" date="2023-06-05T12:30:35.533+0100"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="lab_09_hls" solutionName="solution1" date="2023-06-05T12:29:22.799+0100"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="lab_09_hls" solutionName="solution1" date="2023-06-05T12:25:26.372+0100"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="lab_09_hls" solutionName="solution1" date="2023-06-05T12:23:13.081+0100"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

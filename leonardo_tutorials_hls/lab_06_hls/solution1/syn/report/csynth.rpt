@@ -1,0 +1,154 @@
+
+
+================================================================
+== Synthesis Summary Report of 'crazyFunction'
+================================================================
++ General Information: 
+    * Date:           Tue Nov 29 16:24:48 2022
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        lab_06_hls
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------+------+------+---------+-----------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |         Modules        | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |      |         |           |           |     |
+    |         & Loops        | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |     FF    |    LUT    | URAM|
+    +------------------------+------+------+---------+-----------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |+ crazyFunction         |     -|  0.04|      158|  1.580e+03|         -|      159|     -|        no|     -|  21 (9%)|  3430 (3%)|  4735 (8%)|    -|
+    | o VITIS_LOOP_8_1       |     -|  7.30|      130|  1.300e+03|        32|        1|   100|       yes|     -|        -|          -|          -|    -|
+    |  + sin_or_cos_float_s  |    II|  0.23|       19|    190.000|         -|        1|     -|       yes|     -|   9 (4%)|  2327 (2%)|  2772 (5%)|    -|
+    +------------------------+------+------+---------+-----------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++----------------+------------+---------------+--------+----------+
+| Interface      | Data Width | Address Width | Offset | Register |
++----------------+------------+---------------+--------+----------+
+| s_axi_CRTL_BUS | 32         | 5             | 16     | 0        |
++----------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++----------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface      | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++----------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_CRTL_BUS | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_CRTL_BUS | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_CRTL_BUS | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_CRTL_BUS | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_CRTL_BUS | y        | 0x10   | 32    | W      | Data signal of y                 |                                                                      |
++----------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* BRAM
++-----------+------------+---------------+
+| Interface | Data Width | Address Width |
++-----------+------------+---------------+
+| res_PORTA | 32         | 32            |
+| x_PORTA   | 32         | 32            |
++-----------+------------+---------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| x        | in        | float*   |
+| y        | in        | float    |
+| res      | out       | float*   |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+----------------+-----------+-----------------------------+
+| Argument | HW Interface   | HW Type   | HW Info                     |
++----------+----------------+-----------+-----------------------------+
+| x        | x_PORTA        | interface |                             |
+| y        | s_axi_CRTL_BUS | register  | name=y offset=0x10 range=32 |
+| res      | res_PORTA      | interface |                             |
++----------+----------------+-----------+-----------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+  No burst in design
+
+================================================================
+== Bind Op Report
+================================================================
++---------------------------------------+-----+--------+-------------+-------+---------+---------+
+| Name                                  | DSP | Pragma | Variable    | Op    | Impl    | Latency |
++---------------------------------------+-----+--------+-------------+-------+---------+---------+
+| + crazyFunction                       | 21  |        |             |       |         |         |
+|   fexp_32ns_32ns_32_10_full_dsp_1_U25 | 7   |        | x_assign_1  | fexp  | fulldsp | 9       |
+|   fsqrt_32ns_32ns_32_16_no_dsp_1_U24  | -   |        | tmp_s       | fsqrt | fabric  | 15      |
+|   add_ln8_fu_152_p2                   | -   |        | add_ln8     | add   | fabric  | 0       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U22  | 2   |        | add         | fadd  | fulldsp | 4       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U23   | 3   |        | div         | fmul  | maxdsp  | 3       |
+|  + sin_or_cos_float_s                 | 9   |        |             |       |         |         |
+|    Ex_V_fu_440_p2                     | -   |        | Ex_V        | add   | fabric  | 0       |
+|    add_ln214_fu_264_p2                | -   |        | add_ln214   | add   | fabric  | 0       |
+|    mul_80s_24ns_80_5_1_U1             | 3   |        | ret_V       | mul   | auto    | 4       |
+|    Mx_bits_V_1_fu_376_p2              | -   |        | Mx_bits_V_1 | sub   | fabric  | 0       |
+|    Ex_V_3_fu_479_p2                   | -   |        | Ex_V_3      | sub   | fabric  | 0       |
+|    sub_ln1512_fu_497_p2               | -   |        | sub_ln1512  | sub   | fabric  | 0       |
+|    mul_mul_15ns_15ns_30_4_1_U7        | 1   |        | r_V         | mul   | dsp48   | 3       |
+|    mul_23s_22ns_45_1_1_U5             | 1   |        | r_V_5       | mul   | auto    | 0       |
+|    mul_mul_15ns_15s_30_4_1_U8         | 1   |        | r_V_8       | mul   | dsp48   | 3       |
+|    mul_30s_29ns_58_2_1_U6             | 3   |        | r_V_10      | mul   | auto    | 1       |
+|    add_ln319_fu_933_p2                | -   |        | add_ln319   | add   | fabric  | 0       |
+|    add_ln329_fu_947_p2                | -   |        | add_ln329   | add   | fabric  | 0       |
+|    newexp_fu_957_p2                   | -   |        | newexp      | sub   | fabric  | 0       |
++---------------------------------------+-----+--------+-------------+-------+---------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++--------------------------------------+------+------+--------+---------------------------------+---------+--------+---------+
+| Name                                 | BRAM | URAM | Pragma | Variable                        | Storage | Impl   | Latency |
++--------------------------------------+------+------+--------+---------------------------------+---------+--------+---------+
+| + crazyFunction                      | 0    | 0    |        |                                 |         |        |         |
+|  + sin_or_cos_float_s                | 0    | 0    |        |                                 |         |        |         |
+|    ref_4oPi_table_100_V_U            | -    | -    | pragma | ref_4oPi_table_100_V            | rom_1p  | lutram | 1       |
+|    second_order_float_sin_cos_K0_V_U | -    | -    | pragma | second_order_float_sin_cos_K0_V | rom_1p  | lutram | 1       |
+|    second_order_float_sin_cos_K1_V_U | -    | -    | pragma | second_order_float_sin_cos_K1_V | rom_1p  | lutram | 1       |
+|    second_order_float_sin_cos_K2_V_U | -    | -    | pragma | second_order_float_sin_cos_K2_V | rom_1p  | lutram | 1       |
++--------------------------------------+------+------+--------+---------------------------------+---------+--------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+--------------------------------------------+----------------------------------------------------+
+| Type      | Options                                    | Location                                           |
++-----------+--------------------------------------------+----------------------------------------------------+
+| interface | mode=bram port=res                         | crazy_function_core.cpp:4 in crazyfunction, res    |
+| interface | mode=s_axilite bundle=CRTL_BUS port=return | crazy_function_core.cpp:5 in crazyfunction, return |
+| interface | mode=s_axilite bundle=CRTL_BUS port=y      | crazy_function_core.cpp:6 in crazyfunction, y      |
+| interface | mode=bram port=x                           | crazy_function_core.cpp:7 in crazyfunction, x      |
++-----------+--------------------------------------------+----------------------------------------------------+
+
+

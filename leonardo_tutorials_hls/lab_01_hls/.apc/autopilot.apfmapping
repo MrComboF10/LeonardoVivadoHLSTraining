@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="divide_core.c" path="C:\Users\pcost\Documents\github\DissertationTraining\leonardo_tutorials_hls\lab_01_hls\divide_core.c"/>
+  </source>
+  <testbench>
+    <originFiles name="divide_core_test.c" path="C:\Users\pcost\Documents\github\DissertationTraining\leonardo_tutorials_hls\lab_01_hls\divide_core_test.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

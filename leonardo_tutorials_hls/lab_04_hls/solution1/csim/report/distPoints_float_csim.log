@@ -1,0 +1,10 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../dist_points_core_test.cpp in debug mode
+   Compiling ../../../dist_points_core.cpp in debug mode
+   Generating csim.exe
+d_double(A, B) = 2.061553
+d_float(A, B) = 2.061553
+d_fixed(A, B) = 2.061523
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

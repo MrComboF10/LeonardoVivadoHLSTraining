@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Nov 29 16:35:52 2022
+# Process ID: 14091
+# Current directory: /home/pedro/Documents/github/Dissertation/training/leonardo_tutorials_hls/lab_06_hls/solution1/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/pedro/Documents/github/Dissertation/training/leonardo_tutorials_hls/lab_06_hls/solution1/impl/ip/vivado.log
+# Journal file: /home/pedro/Documents/github/Dissertation/training/leonardo_tutorials_hls/lab_06_hls/solution1/impl/ip/vivado.jou
+# Running On: pedro-ThinkPad-T410s, OS: Linux, CPU Frequency: 1820.657 MHz, CPU Physical cores: 2, Host memory: 8130 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1317.477 ; gain = 0.023 ; free physical = 118 ; free virtual = 3497
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'crazyFunction_fadd_32ns_32ns_32_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+create_ip: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1355.531 ; gain = 38.055 ; free physical = 123 ; free virtual = 3463
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'crazyFunction_fadd_32ns_32ns_32_5_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'crazyFunction_fadd_32ns_32ns_32_5_full_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'crazyFunction_fexp_32ns_32ns_32_10_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+create_ip: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1355.535 ; gain = 0.004 ; free physical = 125 ; free virtual = 3438
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'crazyFunction_fexp_32ns_32ns_32_10_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'crazyFunction_fexp_32ns_32ns_32_10_full_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'crazyFunction_fmul_32ns_32ns_32_4_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+create_ip: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1355.535 ; gain = 0.000 ; free physical = 132 ; free virtual = 3426
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'crazyFunction_fmul_32ns_32ns_32_4_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'crazyFunction_fmul_32ns_32ns_32_4_max_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+create_ip: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1355.535 ; gain = 0.000 ; free physical = 129 ; free virtual = 3417
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 29 16:36:53 2022...

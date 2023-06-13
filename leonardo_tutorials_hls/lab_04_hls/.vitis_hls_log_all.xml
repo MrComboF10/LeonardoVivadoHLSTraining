@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'pow_generic&lt;double>' to 'pow_generic_double_s'." projectName="lab_04_hls" solutionName="solution1" date="2022-11-27T12:36:23.784+0000" type="Warning"/>
+      </synLog>
+      <simLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'distPoints_float_fsub_32ns_32ns_32_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="lab_04_hls" solutionName="solution1" date="2022-11-27T12:38:55.776+0000" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'distPoints_float_fsqrt_32ns_32ns_32_16_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="lab_04_hls" solutionName="solution1" date="2022-11-27T12:38:53.774+0000" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'distPoints_float_fptrunc_64ns_32_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="lab_04_hls" solutionName="solution1" date="2022-11-27T12:38:49.772+0000" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'distPoints_float_fpext_32ns_64_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="lab_04_hls" solutionName="solution1" date="2022-11-27T12:38:45.771+0000" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'distPoints_float_dadd_64ns_64ns_64_7_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;&#xD;&#xA;create_ip: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1436.230 ; gain = 42.930&#xD;" projectName="lab_04_hls" solutionName="solution1" date="2022-11-27T12:38:41.776+0000" type="Warning"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

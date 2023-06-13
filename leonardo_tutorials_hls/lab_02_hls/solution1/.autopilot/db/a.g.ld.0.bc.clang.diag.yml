@@ -1,0 +1,20 @@
+--- !Missed
+Pass:            pasta-interface-builder
+Name:            UnsupportArrayToStream
+DebugLoc:        { File: lab_02_hls/find_core.c, Line: 1, Column: 0 }
+Function:        find
+Args:            
+  - String:          'Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port '''
+  - Name:            in_vec
+  - String:          ''''
+...
+--- !Missed
+Pass:            pasta-interface-builder
+Name:            UnsupportArrayToStream
+DebugLoc:        { File: lab_02_hls/find_core.c, Line: 1, Column: 0 }
+Function:        find
+Args:            
+  - String:          'Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port '''
+  - Name:            out_vec
+  - String:          ''''
+...

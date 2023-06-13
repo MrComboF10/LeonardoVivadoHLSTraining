@@ -1,0 +1,6 @@
+   Build using "E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling dist_points_core.cpp_pre.cpp.tb.cpp
+   Compiling dist_points_core_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_distPoints_float.cpp
+   Compiling apatb_distPoints_float_ir.ll
+   Generating cosim.tv.exe

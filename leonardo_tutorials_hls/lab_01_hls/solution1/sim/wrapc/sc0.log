@@ -1,0 +1,22 @@
+   Build using "E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_divide.cpp
+   Compiling (apcc) divide_core.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'pcost' on host 'desktop-482l3je' (Windows NT_amd64 version 6.2) on Wed Nov 23 11:10:38 +0000 2022
+INFO: [HLS 200-10] In directory 'C:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials_hls/lab_01_hls/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 2.325 seconds; peak allocated memory: 0.000 MB.
+   Compiling (apcc) divide_core_test.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'E:/Pedro/Programs/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'pcost' on host 'desktop-482l3je' (Windows NT_amd64 version 6.2) on Wed Nov 23 11:10:43 +0000 2022
+INFO: [HLS 200-10] In directory 'C:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials_hls/lab_01_hls/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 0.979 seconds; peak allocated memory: 0.000 MB.
+   Compiling apatb_divide_ir.ll
+   Generating cosim.tv.exe

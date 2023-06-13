@@ -1,0 +1,10 @@
+C:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials_hls/lab_02_hls/solution1/csynth.tcl:14:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=find_XLX_SEP_ PragmaOptions=name=find_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=find
+        ^
+lab_02_hls/find_core.c:4:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=find_XLX_SEP_ PragmaOptions=ap_fifo port=in_vec_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma hls interface ap_fifo port=in_vec
+        ^
+lab_02_hls/find_core.c:5:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=find_XLX_SEP_ PragmaOptions=ap_fifo port=out_vec_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma hls interface ap_fifo port=out_vec
+        ^
+3 warnings generated.

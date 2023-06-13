@@ -1,0 +1,571 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Nov 30 20:38:51 2022
+# Process ID: 21464
+# Current directory: C:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.runs/design_1_crazyFunction_0_0_synth_1
+# Command line: vivado.exe -log design_1_crazyFunction_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_crazyFunction_0_0.tcl
+# Log file: C:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.runs/design_1_crazyFunction_0_0_synth_1/design_1_crazyFunction_0_0.vds
+# Journal file: C:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.runs/design_1_crazyFunction_0_0_synth_1\vivado.jou
+# Running On: DESKTOP-482L3JE, OS: Windows, CPU Frequency: 3500 MHz, CPU Physical cores: 4, Host memory: 8531 MB
+#-----------------------------------------------------------
+source design_1_crazyFunction_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1395.375 ; gain = 119.215
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials_hls/lab_06_hls/solution1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Pedro/Programs/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_crazyFunction_0_0
+Command: synth_design -top design_1_crazyFunction_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12420
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Pedro/Programs/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 2246.340 ; gain = 408.820
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_crazyFunction_0_0' [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ip/design_1_crazyFunction_0_0/synth/design_1_crazyFunction_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'crazyFunction' [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction.v:10]
+INFO: [Synth 8-6157] synthesizing module 'crazyFunction_sin_or_cos_float_s' [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_sin_or_cos_float_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'crazyFunction_sin_or_cos_float_s_ref_4oPi_table_100_V_ROM_1P_LUTRAM_1R' [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_sin_or_cos_float_s_ref_4oPi_table_100_V_ROM_1P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './crazyFunction_sin_or_cos_float_s_ref_4oPi_table_100_V_ROM_1P_LUTRAM_1R.dat' is read successfully [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_sin_or_cos_float_s_ref_4oPi_table_100_V_ROM_1P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'crazyFunction_sin_or_cos_float_s_ref_4oPi_table_100_V_ROM_1P_LUTRAM_1R' (0#1) [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_sin_or_cos_float_s_ref_4oPi_table_100_V_ROM_1P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'crazyFunction_sin_or_cos_float_s_second_order_float_sin_cos_K0_V_ROM_1P_LUTRAM_1R' [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_sin_or_cos_float_s_second_order_float_sin_cos_K0_V_ROM_1P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './crazyFunction_sin_or_cos_float_s_second_order_float_sin_cos_K0_V_ROM_1P_LUTRAM_1R.dat' is read successfully [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_sin_or_cos_float_s_second_order_float_sin_cos_K0_V_ROM_1P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'crazyFunction_sin_or_cos_float_s_second_order_float_sin_cos_K0_V_ROM_1P_LUTRAM_1R' (0#1) [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_sin_or_cos_float_s_second_order_float_sin_cos_K0_V_ROM_1P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'crazyFunction_sin_or_cos_float_s_second_order_float_sin_cos_K1_V_ROM_1P_LUTRAM_1R' [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_sin_or_cos_float_s_second_order_float_sin_cos_K1_V_ROM_1P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './crazyFunction_sin_or_cos_float_s_second_order_float_sin_cos_K1_V_ROM_1P_LUTRAM_1R.dat' is read successfully [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_sin_or_cos_float_s_second_order_float_sin_cos_K1_V_ROM_1P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'crazyFunction_sin_or_cos_float_s_second_order_float_sin_cos_K1_V_ROM_1P_LUTRAM_1R' (0#1) [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_sin_or_cos_float_s_second_order_float_sin_cos_K1_V_ROM_1P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'crazyFunction_sin_or_cos_float_s_second_order_float_sin_cos_K2_V_ROM_1P_LUTRAM_1R' [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_sin_or_cos_float_s_second_order_float_sin_cos_K2_V_ROM_1P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './crazyFunction_sin_or_cos_float_s_second_order_float_sin_cos_K2_V_ROM_1P_LUTRAM_1R.dat' is read successfully [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_sin_or_cos_float_s_second_order_float_sin_cos_K2_V_ROM_1P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'crazyFunction_sin_or_cos_float_s_second_order_float_sin_cos_K2_V_ROM_1P_LUTRAM_1R' (0#1) [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_sin_or_cos_float_s_second_order_float_sin_cos_K2_V_ROM_1P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'crazyFunction_mul_80s_24ns_80_5_1' [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_mul_80s_24ns_80_5_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'crazyFunction_mul_80s_24ns_80_5_1' (0#1) [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_mul_80s_24ns_80_5_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'crazyFunction_mux_83_1_1_1' [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_mux_83_1_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'crazyFunction_mux_83_1_1_1' (0#1) [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_mux_83_1_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'crazyFunction_mux_164_1_1_1' [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_mux_164_1_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'crazyFunction_mux_164_1_1_1' (0#1) [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_mux_164_1_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'crazyFunction_mul_23s_22ns_45_1_1' [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_mul_23s_22ns_45_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'crazyFunction_mul_23s_22ns_45_1_1' (0#1) [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_mul_23s_22ns_45_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'crazyFunction_mul_30s_29ns_58_2_1' [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_mul_30s_29ns_58_2_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'crazyFunction_mul_30s_29ns_58_2_1' (0#1) [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_mul_30s_29ns_58_2_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'crazyFunction_mul_mul_15ns_15ns_30_4_1' [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_mul_mul_15ns_15ns_30_4_1.v:32]
+INFO: [Synth 8-6157] synthesizing module 'crazyFunction_mul_mul_15ns_15ns_30_4_1_DSP48_0' [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_mul_mul_15ns_15ns_30_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'crazyFunction_mul_mul_15ns_15ns_30_4_1_DSP48_0' (0#1) [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_mul_mul_15ns_15ns_30_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'crazyFunction_mul_mul_15ns_15ns_30_4_1' (0#1) [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_mul_mul_15ns_15ns_30_4_1.v:32]
+INFO: [Synth 8-6157] synthesizing module 'crazyFunction_mul_mul_15ns_15s_30_4_1' [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_mul_mul_15ns_15s_30_4_1.v:32]
+INFO: [Synth 8-6157] synthesizing module 'crazyFunction_mul_mul_15ns_15s_30_4_1_DSP48_1' [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_mul_mul_15ns_15s_30_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'crazyFunction_mul_mul_15ns_15s_30_4_1_DSP48_1' (0#1) [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_mul_mul_15ns_15s_30_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'crazyFunction_mul_mul_15ns_15s_30_4_1' (0#1) [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_mul_mul_15ns_15s_30_4_1.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'crazyFunction_sin_or_cos_float_s' (0#1) [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_sin_or_cos_float_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'crazyFunction_CRTL_BUS_s_axi' [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_CRTL_BUS_s_axi.v:7]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_CRTL_BUS_s_axi.v:200]
+INFO: [Synth 8-6155] done synthesizing module 'crazyFunction_CRTL_BUS_s_axi' (0#1) [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_CRTL_BUS_s_axi.v:7]
+INFO: [Synth 8-6157] synthesizing module 'crazyFunction_fadd_32ns_32ns_32_5_full_dsp_1' [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_fadd_32ns_32ns_32_5_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'crazyFunction_fadd_32ns_32ns_32_5_full_dsp_1_ip' [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/ip/crazyFunction_fadd_32ns_32ns_32_5_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [E:/Pedro/Programs/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:78971]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [E:/Pedro/Programs/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:78971]
+INFO: [Synth 8-6155] done synthesizing module 'crazyFunction_fadd_32ns_32ns_32_5_full_dsp_1_ip' (0#1) [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/ip/crazyFunction_fadd_32ns_32ns_32_5_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'crazyFunction_fadd_32ns_32ns_32_5_full_dsp_1' (0#1) [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_fadd_32ns_32ns_32_5_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'crazyFunction_fmul_32ns_32ns_32_4_max_dsp_1' [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'crazyFunction_fmul_32ns_32ns_32_4_max_dsp_1_ip' [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/ip/crazyFunction_fmul_32ns_32ns_32_4_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'crazyFunction_fmul_32ns_32ns_32_4_max_dsp_1_ip' (0#1) [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/ip/crazyFunction_fmul_32ns_32ns_32_4_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'crazyFunction_fmul_32ns_32ns_32_4_max_dsp_1' (0#1) [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1' [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1_ip' [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/ip/crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1_ip' (0#1) [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/ip/crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1' (0#1) [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'crazyFunction_fexp_32ns_32ns_32_10_full_dsp_1' [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_fexp_32ns_32ns_32_10_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'crazyFunction_fexp_32ns_32ns_32_10_full_dsp_1_ip' [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/ip/crazyFunction_fexp_32ns_32ns_32_10_full_dsp_1_ip.v:53]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6155] done synthesizing module 'crazyFunction_fexp_32ns_32ns_32_10_full_dsp_1_ip' (0#1) [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/ip/crazyFunction_fexp_32ns_32ns_32_10_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'crazyFunction_fexp_32ns_32ns_32_10_full_dsp_1' (0#1) [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_fexp_32ns_32ns_32_10_full_dsp_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'crazyFunction' (0#1) [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_crazyFunction_0_0' (0#1) [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ip/design_1_crazyFunction_0_0/synth/design_1_crazyFunction_0_0.v:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'shl_ln1454_2_reg_1339_reg' and it is trimmed from '32' to '28' bits. [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_sin_or_cos_float_s.v:947]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ret_V_reg_1164_reg' and it is trimmed from '80' to '78' bits. [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_sin_or_cos_float_s.v:943]
+WARNING: [Synth 8-3936] Found unconnected internal register 'newexp_reg_1350_reg' and it is trimmed from '32' to '8' bits. [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_sin_or_cos_float_s.v:922]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_CRTL_BUS_s_axi.v:261]
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized214 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized214 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized214 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized159 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized159 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized159 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized159 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized159 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_ne_im is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_eq_im__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized97 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized97 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized97 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized97 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized97 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module dsp48e1_wrapper__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port NORMALIZE[1] in module flt_round_bit__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIXED_POINT in module flt_round_bit__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIX_MANT_SIGN in module flt_round_bit__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SIGN in module flt_round_bit__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized33 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized33 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized33 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized212 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized212 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized212 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized210 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized210 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized210 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[7] in module renorm_and_round_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[6] in module renorm_and_round_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[5] in module renorm_and_round_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[4] in module renorm_and_round_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[3] in module renorm_and_round_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[2] in module renorm_and_round_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[1] in module renorm_and_round_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[0] in module renorm_and_round_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized208 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized208 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:47 ; elapsed = 00:01:06 . Memory (MB): peak = 2539.672 ; gain = 702.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:01:08 . Memory (MB): peak = 2557.531 ; gain = 720.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:47 ; elapsed = 00:01:08 . Memory (MB): peak = 2557.531 ; gain = 720.012
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.401 . Memory (MB): peak = 2569.590 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1112 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ip/design_1_crazyFunction_0_0/constraints/crazyFunction_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ip/design_1_crazyFunction_0_0/constraints/crazyFunction_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.runs/design_1_crazyFunction_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.runs/design_1_crazyFunction_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2659.137 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  FDE => FDRE: 5 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.334 . Memory (MB): peak = 2659.137 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Pedro/Programs/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:04 ; elapsed = 00:01:33 . Memory (MB): peak = 2659.137 ; gain = 821.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:04 ; elapsed = 00:01:33 . Memory (MB): peak = 2659.137 ; gain = 821.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.runs/design_1_crazyFunction_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:34 . Memory (MB): peak = 2659.137 ; gain = 821.617
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'crazyFunction_CRTL_BUS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'crazyFunction_CRTL_BUS_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'crazyFunction_CRTL_BUS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'crazyFunction_CRTL_BUS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:10 ; elapsed = 00:01:40 . Memory (MB): peak = 2659.137 ; gain = 821.617
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/fadd_32ns_32ns_32_5_full_dsp_1_U22/crazyFunction_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized0) to 'inst/fadd_32ns_32ns_32_5_full_dsp_1_U22/crazyFunction_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/fadd_32ns_32ns_32_5_full_dsp_1_U22/crazyFunction_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fadd_32ns_32ns_32_5_full_dsp_1_U22/crazyFunction_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fadd_32ns_32ns_32_5_full_dsp_1_U22/crazyFunction_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fadd_32ns_32ns_32_5_full_dsp_1_U22/crazyFunction_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fmul_32ns_32ns_32_4_max_dsp_1_U23/crazyFunction_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fmul_32ns_32ns_32_4_max_dsp_1_U23/crazyFunction_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fmul_32ns_32ns_32_4_max_dsp_1_U23/crazyFunction_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fmul_32ns_32ns_32_4_max_dsp_1_U23/crazyFunction_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U24/crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U24/crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U24/crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U24/crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U24/crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized27) to 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U24/crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U24/crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized27) to 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U24/crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U24/crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U24/crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U24/crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U24/crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U24/crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U24/crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U24/crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U24/crazyFunction_fsqrt_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fexp_32ns_32ns_32_10_full_dsp_1_U25/crazyFunction_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_sign_delay' (delay__parameterized0) to 'inst/fexp_32ns_32ns_32_10_full_dsp_1_U25/crazyFunction_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_sign_delay'
+INFO: [Synth 8-223] decloning instance 'inst/fexp_32ns_32ns_32_10_full_dsp_1_U25/crazyFunction_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/fexp_32ns_32ns_32_10_full_dsp_1_U25/crazyFunction_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/fexp_32ns_32ns_32_10_full_dsp_1_U25/crazyFunction_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/fexp_32ns_32ns_32_10_full_dsp_1_U25/crazyFunction_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fexp_32ns_32ns_32_10_full_dsp_1_U25/crazyFunction_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/fexp_32ns_32ns_32_10_full_dsp_1_U25/crazyFunction_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-6014] Unused sequential element mul_80s_24ns_80_5_1_U1/buff0_reg was removed.  [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_mul_80s_24ns_80_5_1.v:35]
+WARNING: [Synth 8-6014] Unused sequential element mul_80s_24ns_80_5_1_U1/buff0_reg was removed.  [c:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.gen/sources_1/bd/design_1/ipshared/6f3e/hdl/verilog/crazyFunction_mul_80s_24ns_80_5_1.v:35]
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[47]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[46]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[45]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[44]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[43]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[42]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[41]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[40]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[39]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[38]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[37]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[36]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[35]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[34]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[33]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[32]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[31]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[30]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[29]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[28]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[27]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[26]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[25]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[24]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[23]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[22]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[21]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[20]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[19]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[18]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[17]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[16]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[15]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[14]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[13]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[12]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[11]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[10]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[9]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[8]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[7]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[6]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[5]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[4]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[3]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[2]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[1]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[0]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[47]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[46]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[45]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[44]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[43]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[42]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[41]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[40]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[39]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[38]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[37]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[36]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[35]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[34]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[33]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[32]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[31]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[30]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[29]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[28]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[27]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[26]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[25]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[24]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[23]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[22]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[21]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[20]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[19]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[18]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[17]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[16]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[15]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[14]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[13]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[12]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[11]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[10]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[9]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[8]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[7]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[6]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[5]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[4]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[3]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[2]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[1]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff2_reg[0]) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[47]__0) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[46]__0) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[45]__0) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (mul_80s_24ns_80_5_1_U1/buff1_reg[44]__0) is unused and will be removed from module crazyFunction_sin_or_cos_float_s.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:14 ; elapsed = 00:03:11 . Memory (MB): peak = 2659.137 ; gain = 821.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:29 ; elapsed = 00:03:34 . Memory (MB): peak = 2659.137 ; gain = 821.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:33 ; elapsed = 00:03:38 . Memory (MB): peak = 2659.137 ; gain = 821.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:38 ; elapsed = 00:03:44 . Memory (MB): peak = 2659.137 ; gain = 821.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:47 ; elapsed = 00:03:55 . Memory (MB): peak = 2659.137 ; gain = 821.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:47 ; elapsed = 00:03:56 . Memory (MB): peak = 2659.137 ; gain = 821.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:49 ; elapsed = 00:03:57 . Memory (MB): peak = 2659.137 ; gain = 821.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:49 ; elapsed = 00:03:57 . Memory (MB): peak = 2659.137 ; gain = 821.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:49 ; elapsed = 00:03:58 . Memory (MB): peak = 2659.137 ; gain = 821.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:49 ; elapsed = 00:03:58 . Memory (MB): peak = 2659.137 ; gain = 821.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++----------------------------------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                   | DSP Mapping            | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------------------------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp48e1_wrapper                               | Dynamic                | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0               | C+A'*B'                | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized7               | C'+(D+A)'*B'           | 6      | 17     | 43     | 16     | 43     | 0    | 1    | 1    | 1    | 1     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized6_29            | Dynamic                | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized5               | Dynamic                | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized6               | Dynamic                | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized4_28            | (C+A:B)'               | 0      | 6      | 0      | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized4               | (C+A:B)'               | 30     | 18     | 48     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized8               | Dynamic                | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1               | (A*B)'                 | 24     | 0      | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2               | PCIN>>17+(A*B)'        | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3               | PCIN+A:B+C             | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|crazyFunction_sin_or_cos_float_s              | A''*B''                | 22     | 17     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|crazyFunction_sin_or_cos_float_s              | (PCIN>>17+A''*B')'     | 22     | 18     | -      | -      | 28     | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|crazyFunction_sin_or_cos_float_s              | A*B'                   | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|crazyFunction_sin_or_cos_float_s              | (PCIN>>17+A'*B)'       | 30     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|crazyFunction_sin_or_cos_float_s              | A'*B                   | 17     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|crazyFunction_sin_or_cos_float_s              | (PCIN>>17+A*B)'        | 0      | 12     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|crazyFunction_sin_or_cos_float_s              | (A'*B'')'              | 24     | 17     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|crazyFunction_sin_or_cos_float_s              | PCIN>>17+(A'*B'')'     | 24     | 17     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|crazyFunction_sin_or_cos_float_s              | (PCIN>>17+(A'*B'')')'  | 24     | 17     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|crazyFunction_sin_or_cos_float_s              | PCIN>>17+(A''*B'')'    | 24     | 17     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 0    | 
+|crazyFunction_sin_or_cos_float_s              | (PCIN>>17+(A''*B'')')' | 24     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|crazyFunction_sin_or_cos_float_s              | ((A'*B')')'            | 15     | 15     | -      | -      | 30     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|crazyFunction_mul_mul_15ns_15s_30_4_1_DSP48_1 | ((A'*B')')'            | 15     | 18     | -      | -      | 30     | 1    | 1    | -    | -    | -     | 1    | 1    | 
++----------------------------------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    42|
+|2     |DSP48E1 |    25|
+|21    |LUT1    |   119|
+|22    |LUT2    |   201|
+|23    |LUT3    |   658|
+|24    |LUT4    |   356|
+|25    |LUT5    |   277|
+|26    |LUT6    |  1324|
+|27    |MUXCY   |   558|
+|28    |MUXF7   |   322|
+|29    |MUXF8   |    51|
+|30    |SRL16E  |   139|
+|31    |SRLC32E |     8|
+|32    |XORCY   |   442|
+|33    |FDE     |     5|
+|34    |FDRE    |  2028|
+|35    |FDSE    |    41|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:49 ; elapsed = 00:03:58 . Memory (MB): peak = 2659.137 ; gain = 821.617
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 620 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:54 ; elapsed = 00:03:42 . Memory (MB): peak = 2659.137 ; gain = 720.012
+Synthesis Optimization Complete : Time (s): cpu = 00:02:49 ; elapsed = 00:03:58 . Memory (MB): peak = 2659.137 ; gain = 821.617
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.225 . Memory (MB): peak = 2659.137 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1445 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2659.137 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 166 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 161 instances
+  FDE => FDRE: 5 instances
+
+Synth Design complete, checksum: 87ecd2ce
+INFO: [Common 17-83] Releasing license: Synthesis
+104 Infos, 209 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:00 ; elapsed = 00:04:19 . Memory (MB): peak = 2659.137 ; gain = 1224.828
+INFO: [Common 17-1381] The checkpoint 'C:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.runs/design_1_crazyFunction_0_0_synth_1/design_1_crazyFunction_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_crazyFunction_0_0, cache-ID = ed2e9eee7f79801b
+INFO: [Coretcl 2-1174] Renamed 329 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/pcost/Documents/github/Dissertation/training/leonardo_tutorials/lab_06/lab_06.runs/design_1_crazyFunction_0_0_synth_1/design_1_crazyFunction_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_crazyFunction_0_0_utilization_synth.rpt -pb design_1_crazyFunction_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 30 20:43:59 2022...
